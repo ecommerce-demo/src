@@ -3,78 +3,536 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/styles/bootstrap.css">
-      <!--<link rel="stylesheet" href="/styles/bootstrap-theme.css">-->
-      <link rel="stylesheet" href="/styles/style.css">
+      <link rel="stylesheet" href="/css/bootstrap.css">
+      <!--<link rel="stylesheet" href="/css/bootstrap-theme.css">-->
+      <link rel="stylesheet" href="/css/font-awesome.css">
+      <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-      <div id="container">
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.png">
-              </a>
-            </div>
-            
-            <div class="nav navbar-nav navbar-left">
-              <form class="navbar-form" role="search">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="كلمة البحث">
-                  <div class="input-group-btn">
-                    <div class="btn-group">
-                      <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">اختر الفئة <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu">
-                        <select multiple>
-                          <option value="1">رجالية</option>
-                        </select>
-                      </ul>
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img src="images/logo.png">
+                </a>
+              </div>
+              
+              <div class="nav navbar-nav navbar-left">
+                <form class="navbar-form" role="search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="كلمة البحث">
+                    <div class="input-group-btn">
+                      <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">اختر الفئة <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <select multiple>
+                            <option value="1">رجالية</option>
+                          </select>
+                        </ul>
+                      </div>
+                      <button type="submit" class="btn btn-primary">ابحث</button>
                     </div>
-                    <button type="submit" class="btn btn-primary">ابحث</button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="#">الصفحة الرئيسية</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">أقسام المتجر <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">تواصل معنا</a></li>
+                  <li><button class="btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div id="main" class="row">
+          <div class="container-fluid">
+            <div class="row" id="row-slider">
+              <div id="carousel-jumbo" class="carousel slide" data-ride="carousel">
+                <a class="right custom-carousel-control" href="#carousel_jumbo" data-slide="prev">
+                  <span class="fa fa-chevron-right fa-2x"></span>
+                </a>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="container-fluid">
+                      <div class="col-xs-12 col-sm-4">
+                        <img src="/images/jumbo_1.png">
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="jumbo-text">
+                          <div class="sale large">50%</div>
+                          <h1>تي شيرت رجالي من فيميا</h1>
+                          <button class="btn btn-primary btn-lg">
+                            تسوق الآن
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="container-fluid">
+                      <div class="col-xs-12 col-sm-4">
+                        <img src="/images/most_sold_3.jpg">
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="jumbo-text">
+                          <div class="sale large">50%</div>
+                          <h1>تي شيرت رجالي من فيميا</h1>
+                          <button class="btn btn-primary btn-lg">
+                            تسوق الآن
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="container-fluid">
+                      <div class="col-xs-12 col-sm-4">
+                        <img src="/images/tshirt_polo.jpg">
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="jumbo-text">
+                          <h1>تي شيرت بولو</h1>
+                          <button class="btn btn-primary btn-lg">
+                            تسوق الآن
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="container-fluid">
+                      <div class="col-xs-12 col-sm-4">
+                        <img src="/images/tshirt.jpg">
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="jumbo-text">
+                          <div class="sale large">50%</div>
+                          <h1>تي شيرت</h1>
+                          <button class="btn btn-primary btn-lg">
+                            تسوق الآن
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </form>
+                <div class="carousel-indicators custom-indicators">
+                  <img data-target="#carousel-jumbo" data-slide-to="0" class="active" src="/images/jumbo_1.png">
+                  <img data-target="#carousel-jumbo" data-slide-to="1" src="/images/most_sold_3.jpg">
+                  <img data-target="#carousel-jumbo" data-slide-to="2" src="/images/tshirt_polo.jpg">
+                  <img data-target="#carousel-jumbo" data-slide-to="3" src="/images/tshirt.jpg">
+                </div>
+                <a class="left custom-carousel-control" href="#carousel_jumbo" data-slide="next">
+                  <span class="fa fa-chevron-left fa-2x"></span>
+                </a>
+              </div>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">الصفحة الرئيسية</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">أقسام المتجر <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">تواصل معنا</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <div class="row" id="row_features">
+              <div class="col-md-6 col-md-offset-3 box">
+                <h3>مميزات المتجر</h3>
+                <div class="container-fluid">
+                  <div class="col-xs-4 feature">
+                    <img src="/images/feature_1.png">
+                    <div>التوصيل مجاني</div>
+                  </div>
+                  <div class="col-xs-4 feature">
+                    <img src="/images/feature_2.png">
+                    <div>ضمان المنتج سنة</div>
+                  </div>
+                  <div class="col-xs-4 feature">
+                    <img src="/images/feature_3.png">
+                    <div>استرجاع المنتج</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="row_most_sold">
+              <h3>الأكثر مبيعًا</h3>
+              <div id="carousel_most_sold" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="col-sm-3">
+                      <div class="thumbnail">
+                        <div class="overlay">
+                          <div>
+                            <button class="btn btn-default">
+                              <span class="fa fa-cart-plus"></span>
+                              أضف للعربة
+                            </button>
+                          </div>
+                        </div>
+                        <img src="/images/most_sold_1.jpg">
+                        <div class="caption">
+                          <div class="clearfix">
+                            <h4 class="pull-left">شير بلوز من نافي</h4>
+                            <div class="pull-right price">500$</div>
+                          </div>
+                          <div>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumbnail">
+                        <div class="overlay">
+                          <div>
+                            <button class="btn btn-default">
+                              <span class="fa fa-cart-plus"></span>
+                              أضف للعربة
+                            </button>
+                          </div>
+                        </div>
+                        <img src="/images/most_sold_2.jpg">
+                        <div class="caption">
+                          <div class="clearfix">
+                            <h4 class="pull-left">فلورا تي شيرت</h4>
+                            <div class="pull-right price">200$</div>
+                          </div>
+                          <div>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumbnail">
+                        <div class="overlay">
+                          <div>
+                            <button class="btn btn-default">
+                              <span class="fa fa-cart-plus"></span>
+                              أضف للعربة
+                            </button>
+                          </div>
+                        </div>
+                        <div class="sale">
+                          50%
+                        </div>
+                        <img src="/images/most_sold_3.jpg">
+                        <div class="caption">
+                          <div class="clearfix">
+                            <h4 class="pull-left">جاكت أولادي</h4>
+                            <div class="pull-right price">450$</div>
+                          </div>
+                          <div>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumbnail">
+                        <div class="overlay">
+                          <div>
+                            <button class="btn btn-default">
+                              <span class="fa fa-cart-plus"></span>
+                              أضف للعربة
+                            </button>
+                          </div>
+                        </div>
+                        <img src="/images/most_sold_4.jpg">
+                        <div class="caption">
+                          <div class="clearfix">
+                            <h4 class="pull-left">شنطة كروس بناتي</h4>
+                            <div class="pull-right price">650$</div>
+                          </div>
+                          <div>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-most-sold" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-most-sold" data-slide-to="1"></li>
+                  <li data-target="#carousel-most-sold" data-slide-to="2"></li>
+                </ol>
+              </div>
+            </div>
+            <div class="row" id="row_brands">
+              <h3>الماركات العالمية</h3>
+              <div class="product col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="">
+                          <img class="media-object" src="/images/boot_adidas.jpg">
+                        </a>
+                        <button class="btn btn-default">
+                          تصفح المنتج
+                        </button>
+                      </div>
+                      <span class="media-body">
+                        <span class="product-text">
+                          <span class="clearfix">
+                            <h4 class="media-heading pull-left">كوتشي أديداس أزرق</h4>
+                            <span class="price pull-right">900$</span>
+                          </span>
+                          <span class="product-description">
+                            هناك حقيقة مثبتة من زمن وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+                          </span>
+                          <div>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <div class="clearfix">
+                            <div class="brand pull-left">
+                              <span>الماركة:</span>
+                              <img src="/images/adidas_small.png">
+                            </div>
+                            <div class="pull-right">
+                              <div class="btn btn-default">
+                                <div class="fa fa-chevron-right"></div>
+                              </div>
+                              <div class="btn btn-default">
+                                <div class="fa fa-chevron-left"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                      </span>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="">
+                          <img class="media-object" src="/images/tshirt.jpg">
+                        </a>
+                        <button class="btn btn-default">
+                          تصفح المنتج
+                        </button>
+                      </div>
+                      <span class="media-body">
+                        <span class="product-text">
+                          <span class="clearfix">
+                            <h4 class="media-heading pull-left">تي شيرت بولو</h4>
+                            <span class="price pull-right">420$</span>
+                          </span>
+                          <span class="product-description">
+                            هناك حقيقة مثبتة من زمن وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+                          </span>
+                          <div>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <div class="clearfix">
+                            <div class="brand pull-left">
+                              <span>الماركة:</span>
+                              <img src="/images/lacoste_small.png">
+                            </div>
+                            <div class="pull-right">
+                              <div class="btn btn-default">
+                                <div class="fa fa-chevron-right"></div>
+                              </div>
+                              <div class="btn btn-default">
+                                <div class="fa fa-chevron-left"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="">
+                          <img class="media-object" src="/images/tshirt_polo.jpg">
+                        </a>
+                        <button class="btn btn-default">
+                          تصفح المنتج
+                        </button>
+                      </div>
+                      <span class="media-body">
+                        <span class="product-text">
+                          <span class="clearfix">
+                            <h4 class="media-heading pull-left">تي شيرت بولو</h4>
+                            <span class="price pull-right">420$</span>
+                          </span>
+                          <span class="product-description">
+                            هناك حقيقة مثبتة من زمن وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+                          </span>
+                          <div>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <div class="clearfix">
+                            <div class="brand pull-left">
+                              <span>الماركة:</span>
+                              <img src="/images/polo_small.png">
+                            </div>
+                            <div class="pull-right">
+                              <div class="btn btn-default">
+                                <div class="fa fa-chevron-right"></div>
+                              </div>
+                              <div class="btn btn-default">
+                                <div class="fa fa-chevron-left"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="">
+                          <img class="media-object" src="/images/bag.jpg">
+                        </a>
+                        <button class="btn btn-default">
+                          تصفح المنتج
+                        </button>
+                      </div>
+                      <span class="media-body">
+                        <span class="product-text">
+                          <span class="clearfix">
+                            <h4 class="media-heading pull-left">شنطة جلد طبيعي</h4>
+                            <span class="price pull-right">360$</span>
+                          </span>
+                          <span class="product-description">
+                            هناك حقيقة مثبتة من زمن وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+                          </span>
+                          <div>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <div class="clearfix">
+                            <div class="brand pull-left">
+                              <span>الماركة:</span>
+                              <img src="/images/hm_small.png">
+                            </div>
+                            <div class="pull-right">
+                              <div class="btn btn-default">
+                                <div class="fa fa-chevron-right"></div>
+                              </div>
+                              <div class="btn btn-default">
+                                <div class="fa fa-chevron-left"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="brands" class="row">
+          <span>المتجر وكيل معتمد لكبرى الشركات العالمية</span>
+          <span id="brand-logos">
+            <img class="brand-logo" src="images/lacoste.png" alt="LACOSTE">
+            <img class="brand-logo" src="images/adidas.png" alt="Adidas">
+            <img class="brand-logo" src="images/puma.png" alt="PUMA">
+            <img class="brand-logo" src="images/polo.png" alt="Polo">
+          </span>
+        </div>
+        <div id="footer" class="row">
+          <div class="container-fluid">
+            <div class="row">
+              <img id="footer_logo" src="images/logo_footer.png" alt="شعار عربي" >
+            </div>
+            <div class="row">
+              <ul id="footer_link_list">
+                <li><a href="/">الصفحة الرئيسية</a></li>
+                <li><a href="#">أقسام المتجر</a></li>
+                <li><a href="/contact">تواصل معنا</a></li>
               </ul>
-              
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+            </div>
+            <span class="separator center-block"></span>
+            <form class="form form-inline" id="form_subscription">
+              <div class="form-group">
+                <label for="input_email">تابع النشرة البريدية لأحدث العروض</label><br>
+                <input id="input_email" type="text" class="form-control" placeholder="البريد الإلكتروني">
+                <input class="btn btn-default btn-primary" type="submit" value="متابعة">
+              </div>
+            </form>
+            <div id="footer_copyright" class="row">
+              <span id="footer_copyright_text">جميع الحقوق محفوظة للمتجر لسنة 2016</span>
+              <div id="footer_social_links">
+                <a href="#"><span class="fa fa-facebook-square fa-lg"></span></a>
+                <a href="#"><span class="fa fa-twitter-square fa-lg"></span></a>
+                <a href="#"><span class="fa fa-instagram fa-lg"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        
-      </div>
-      <div id="footer" class="row">
-        
-      </div>
-      <script src="scripts/jquery.js"></script>
-      <script src="scripts/bootstrap.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
     </body>
   </html>

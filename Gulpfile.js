@@ -10,10 +10,10 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('css', ['fonts'], function() {
-  gulp.src('src/styles/*.css')
+  gulp.src('src/css/*.css')
   .pipe(flip())
   .on('error', gutil.log)
-  .pipe(gulp.dest('build/styles'))
+  .pipe(gulp.dest('build/css'))
   .pipe(connect.reload());
 });
 
@@ -25,9 +25,9 @@ gulp.task('html', function() {
 });
 
 gulp.task('js', function() {
-  gulp.src('src/scripts/*.js')
+  gulp.src('src/js/*.js')
   .on('error', gutil.log)
-  .pipe(gulp.dest('build/scripts'))
+  .pipe(gulp.dest('build/js'))
   .pipe(connect.reload());
 });
 
@@ -51,8 +51,9 @@ gulp.task('connect', function() {
 
 gulp.task('watch', function() {
   gulp.watch(['src/*.html'], ['html']);
-  gulp.watch(['src/styles/*.css'], ['css']);
-  gulp.watch(['src/scripts/*.js'], ['js']);
+  gulp.watch(['src/css/*.css'], ['css']);
+  gulp.watch(['src/js/*.js'], ['js']);
+  gulp.watch(['src/images/*'], ['images']);
 });
 
 gulp.task('default', ['build', 'watch', 'connect'])
