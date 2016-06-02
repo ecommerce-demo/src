@@ -21,7 +21,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                   <img src="images/logo.png">
                 </a>
               </div>
@@ -64,7 +64,7 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">الصفحة الرئيسية</a></li>
+                  <li><a href="/">الصفحة الرئيسية</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">أقسام المتجر <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -74,7 +74,7 @@
                     </ul>
                   </li>
                   <li><a class="active" href="/contact.html">تواصل معنا</a></li>
-                  <li><button class="btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
+                  <li><button class="btn-shopping-cart btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
                 </ul>
               </div>
             </div>
@@ -120,16 +120,16 @@
                 <form class="form" id="form-contact-send-message">
                   <div class="row">
                     <div class="form-group">
-                      <div class="col-sm-6">
+                      <div class="form-group col-sm-6">
                         <input class="form-control" name="name" type="text" placeholder="الاسم">
                       </div>
-                      <div class="col-sm-6">
+                      <div class="form-group col-sm-6">
                         <input class="form-control" name="email" type="email" placeholder="البريد الإلكتروني">
                       </div>
-                      <div class="col-sm-12">
+                      <div class="form-group col-sm-12">
                         <textarea placeholder="نص الرسالة" class="form-control" name="message" id="" cols="30" rows="10"></textarea>
                       </div>
-                      <div class="col-sm-12">
+                      <div class="form-group col-sm-12">
                         <div class="pull-right">
                           <button type="submit" class="btn btn-primary">
                             إرسال الرسالة <span class="fa fa-message"></span>
@@ -169,7 +169,7 @@
                     <li><a href="#">نسائي</a></li>
                   </ul>
                 </li>
-                <li><a href="/contact">تواصل معنا</a></li>
+                <li><a href="/contact.html">تواصل معنا</a></li>
               </ul>
             </div>
             <span class="separator center-block"></span>
@@ -194,8 +194,9 @@
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
       <script src="http://maps.googleapis.com/maps/api/js"></script>
+      <script src="js/index.js"></script>
       <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        $(document).ready(function() {
           var address = { lat: 30.1045013, lng: 31.3290253 };
           var map = new google.maps.Map(document.getElementById("map"), {
             center: address,

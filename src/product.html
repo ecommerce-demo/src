@@ -21,7 +21,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                   <img src="images/logo.png">
                 </a>
               </div>
@@ -64,7 +64,7 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">الصفحة الرئيسية</a></li>
+                  <li><a href="/">الصفحة الرئيسية</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">أقسام المتجر <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -74,7 +74,7 @@
                     </ul>
                   </li>
                   <li><a class="active" href="/contact.html">تواصل معنا</a></li>
-                  <li><button class="btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
+                  <li><button class="btn-shopping-cart btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
                 </ul>
               </div>
             </div>
@@ -94,15 +94,15 @@
                 <div id="carousel-product-images" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="item active">
-                      <img src="/images/tshirt.jpg">
+                      <img src="/images/most_sold_2.jpg">
                     </div>
                     <div class="item">
-                      <img src="/images/tshirt.jpg">
+                      <img src="/images/most_sold_2.jpg">
                     </div>
                   </div>
                   <div class="carousel-indicators custom-indicators">
-                    <img data-target="#carousel-product-images" data-slide-to="0" class="active" src="/images/tshirt.jpg">
-                    <img data-target="#carousel-product-images" data-slide-to="1" src="/images/tshirt.jpg">
+                    <img data-target="#carousel-product-images" data-slide-to="0" class="active" src="/images/most_sold_2.jpg">
+                    <img data-target="#carousel-product-images" data-slide-to="1" src="/images/most_sold_2.jpg">
                   </div>
                 </div>
               </div>
@@ -253,7 +253,7 @@
             <div class="row" id="row-suggestions">
               <h3>اقترحنا لك</h3>
               <div class="col-sm-3">
-                <div class="product-thumbnail  thumbnail">
+                <a href="/product.html" class="product-thumbnail  thumbnail">
                   <div class="overlay">
                     <div>
                       <button class="btn btn-default">
@@ -276,10 +276,10 @@
                       <span class="fa fa-star"></span>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-sm-3">
-                <div class="product-thumbnail  thumbnail">
+                <a href="/product.html" class="product-thumbnail  thumbnail">
                   <div class="overlay">
                     <div>
                       <button class="btn btn-default">
@@ -302,10 +302,10 @@
                       <span class="fa fa-star"></span>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-sm-3">
-                <div class="product-thumbnail  thumbnail">
+                <a href="/product.html" class="product-thumbnail  thumbnail">
                   <div class="overlay">
                     <div>
                       <button class="btn btn-default">
@@ -331,10 +331,10 @@
                       <span class="fa fa-star"></span>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-sm-3">
-                <div class="product-thumbnail thumbnail">
+                <a href="/product.html" class="product-thumbnail thumbnail">
                   <div class="overlay">
                     <div>
                       <button class="btn btn-default">
@@ -357,7 +357,7 @@
                       <span class="fa fa-star active"></span>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -387,7 +387,7 @@
                     <li><a href="#">نسائي</a></li>
                   </ul>
                 </li>
-                <li><a href="/contact">تواصل معنا</a></li>
+                <li><a href="/contact.html">تواصل معنا</a></li>
               </ul>
             </div>
             <span class="separator center-block"></span>
@@ -411,14 +411,6 @@
       </div>
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
-      <script>
-        $(document).ready(function() {
-          $('.product-option').on('click', function() {
-            $(this).siblings('.active').removeClass('active');
-            $(this).addClass('active');
-            $(this).find('input').prop('checked', true);
-          });
-        });
-      </script>
+      <script src="js/index.js"></script>
     </body>
   </html>

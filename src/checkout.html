@@ -21,7 +21,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                   <img src="images/logo.png">
                 </a>
               </div>
@@ -64,7 +64,7 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">الصفحة الرئيسية</a></li>
+                  <li><a href="/">الصفحة الرئيسية</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">أقسام المتجر <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -74,7 +74,7 @@
                     </ul>
                   </li>
                   <li><a class="active" href="/contact.html">تواصل معنا</a></li>
-                  <li><button class="btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
+                  <li><button class="btn-shopping-cart btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
                 </ul>
               </div>
             </div>
@@ -88,98 +88,100 @@
                 <li class="active">عربة الشراء</li>
               </ol>
             </div>
-            <form class="row" id="row-shopping-cart">
+            <div class="row" id="row-shopping-cart">
               <h1>عربة الشراء</h1>
-              <table id="shopping-cart-contents" class="table table-stripped">
-                <thead>
-                  <th>المنتج</th>
-                  <th>السعر</th>
-                  <th>العدد المطلوب</th>
-                  <th>السعر الإجمالي</th>
-                </thead>
-                <tbody>
-                  <tr data-price="400">
-                    <td>
-                      <input name="product[0]" type="hidden" value="تي شيرت فلورا">
-                      <div class="media">
-                        <div class="media-left">
-                          <img src="/images/tshirt_polo.jpg"class="media-object">
+              <form id="form-checkout" action="/payment.html">
+                <table id="shopping-cart-contents" class="table table-stripped">
+                  <thead>
+                    <th>المنتج</th>
+                    <th>السعر</th>
+                    <th>العدد المطلوب</th>
+                    <th>السعر الإجمالي</th>
+                  </thead>
+                  <tbody>
+                    <tr data-price="400">
+                      <td>
+                        <input name="product[0]" type="hidden" value="تي شيرت فلورا">
+                        <div class="media">
+                          <div class="media-left">
+                            <img src="/images/tshirt_polo.jpg"class="media-object">
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">
+                              تي شيرت فلورا من بولو
+                            </h4>
+                          </div>
                         </div>
-                        <div class="media-body">
-                          <h4 class="media-heading">
-                            تي شيرت فلورا من بولو
-                          </h4>
+                      </td>
+                      <td>400$</td>
+                      <td>
+                        <select name="quantity[0]" class="form-control">
+                          <option value="1">1</option>
+                          <option value="2" selected>2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </td>
+                      <td class="total">
+                        800$
+                      </td>
+                      <td>
+                        <button type="button" class="btn-delete btn btn-danger">حذف</button>
+                      </td>
+                    </tr>
+                    <tr data-price="300">
+                      <td>
+                        <input name="product[1]" type="hidden" value="تي شيرت أديداس">
+                        <div class="media">
+                          <div class="media-left">
+                            <img src="/images/tshirt.jpg"class="media-object">
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">
+                              تي شيرت أديداس
+                            </h4>
+                          </div>
                         </div>
-                      </div>
+                      </td>
+                      <td>300$</td>
+                      <td>
+                        <select name="quantity[1]" class="form-control">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </td>
+                      <td class="total">
+                        300$
+                      </td>
+                      <td>
+                        <button type="button" class="btn-delete btn btn-danger">حذف</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <td colspan="5">
+                      <span class="text-muted">
+                        السعر الإجمالي للمنتجات:
+                      </span>
+                      <strong>
+                        <span id="price-value">1200</span>
+                        دولار
+                      </strong>
                     </td>
-                    <td>400$</td>
-                    <td>
-                      <select name="quantity[0]" class="form-control">
-                        <option value="1">1</option>
-                        <option value="2" selected>2</option>
-                        <option value="3">3</option>
-                      </select>
-                    </td>
-                    <td class="total">
-                      800$
-                    </td>
-                    <td>
-                      <button type="button" class="btn-delete btn btn-danger">حذف</button>
-                    </td>
-                  </tr>
-                  <tr data-price="300">
-                    <td>
-                      <input name="product[1]" type="hidden" value="تي شيرت أديداس">
-                      <div class="media">
-                        <div class="media-left">
-                          <img src="/images/tshirt.jpg"class="media-object">
-                        </div>
-                        <div class="media-body">
-                          <h4 class="media-heading">
-                            تي شيرت أديداس
-                          </h4>
-                        </div>
-                      </div>
-                    </td>
-                    <td>300$</td>
-                    <td>
-                      <select name="quantity[1]" class="form-control">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                      </select>
-                    </td>
-                    <td class="total">
-                      300$
-                    </td>
-                    <td>
-                      <button type="button" class="btn-delete btn btn-danger">حذف</button>
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <td colspan="5">
-                    <span class="text-muted">
-                      السعر الإجمالي للمنتجات:
-                    </span>
-                    <strong>
-                      <span id="price-value">1200</span>
-                      دولار
-                    </strong>
-                  </td>
-                </tfoot>
-              </table>
-              <div class="col-xs-12">
-                <button type="submit" class="btn btn-primary btn-lg">
-                  <span class="fa fa-dollar"></span>
-                  إكمال عملية الشراء
-                </button>
-              </div>
-            </form>
+                  </tfoot>
+                </table>
+                <div class="col-xs-12 form-group">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    <span class="fa fa-dollar"></span>
+                    إكمال عملية الشراء
+                  </button>
+                </div>
+              </form>
+            </div>
             <div class="row" id="row-suggestions">
               <h3>اقترحنا لك</h3>
               <div class="col-sm-3">
-                <div class="product-thumbnail  thumbnail">
+                <a href="/product.html" class="product-thumbnail  thumbnail">
                   <div class="overlay">
                     <div>
                       <button class="btn btn-default">
@@ -202,10 +204,10 @@
                       <span class="fa fa-star"></span>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-sm-3">
-                <div class="product-thumbnail  thumbnail">
+                <a href="/product.html" class="product-thumbnail  thumbnail">
                   <div class="overlay">
                     <div>
                       <button class="btn btn-default">
@@ -228,10 +230,10 @@
                       <span class="fa fa-star"></span>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-sm-3">
-                <div class="product-thumbnail  thumbnail">
+                <a href="/product.html" class="product-thumbnail  thumbnail">
                   <div class="overlay">
                     <div>
                       <button class="btn btn-default">
@@ -257,10 +259,10 @@
                       <span class="fa fa-star"></span>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-sm-3">
-                <div class="product-thumbnail thumbnail">
+                <a href="/product.html" class="product-thumbnail thumbnail">
                   <div class="overlay">
                     <div>
                       <button class="btn btn-default">
@@ -283,7 +285,7 @@
                       <span class="fa fa-star active"></span>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -313,7 +315,7 @@
                     <li><a href="#">نسائي</a></li>
                   </ul>
                 </li>
-                <li><a href="/contact">تواصل معنا</a></li>
+                <li><a href="/contact.html">تواصل معنا</a></li>
               </ul>
             </div>
             <span class="separator center-block"></span>
@@ -337,28 +339,6 @@
       </div>
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
-      <script>
-        function recalculateTotal() {
-          var total = 0;
-          $('tr[data-price]').each(function() {
-            var price = Number($(this).attr('data-price'));
-            var quantity = Number($(this).find('select').val());
-            total = total + quantity * price;
-          });
-          $('#price-value').text(total);
-        }
-        $('#shopping-cart-contents select').on('change', function() {
-          var price = Number($(this).parents('tr[data-price]').attr('data-price'));
-          var quantity = Number($(this).val());
-          $(this).parents('tr').find('.total').text((price * quantity) + '$');
-          recalculateTotal();
-        })
-        $(document).ready(function() {
-          $('.btn-delete').on('click', function() {
-            $(this).parents('tr').remove();
-            recalculateTotal();
-          });
-        });
-      </script>
+      <script src="js/index.js"></script>
     </body>
   </html>

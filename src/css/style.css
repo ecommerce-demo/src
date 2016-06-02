@@ -23,6 +23,10 @@ body {
   margin: 0px 5px;
 }
 
+#form-search {
+  width: 100%;
+}
+
 #brands {
   text-align: center;
   background-color: #DBEEFA;
@@ -169,6 +173,10 @@ body {
 
 .product-thumbnail .overlay:hover {
   opacity: 1;
+}
+
+.product-thumbnail:hover {
+  text-decoration: initial;
 }
 
 #row-most-sold .carousel-indicators {
@@ -338,13 +346,6 @@ body {
   text-align: center;
 }
 
-#form-contact-send-message .form-control,
-#form-contact-send-message .btn,
-#form-contact-subscription .form-control,
-#form-contact-subscription .btn {
-  margin: 5px 0;
-}
-
 #map {
   height: 250px;
   width: 100%;
@@ -397,4 +398,13 @@ body {
 
 #shopping-cart-contents tfoot {
   font-size: 130%;
+}
+
+#row-category h3, #row-contact h3 {
+  border-bottom: 1px solid lightgray;
+  line-height: 150%;
+}
+
+#btn-category-filter {
+  width: 100%;
 }

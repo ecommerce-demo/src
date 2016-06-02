@@ -21,7 +21,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                   <img src="images/logo.png">
                 </a>
               </div>
@@ -32,7 +32,7 @@
                     <input type="text" class="form-control" placeholder="كلمة البحث">
                     <div class="input-group-btn">
                       <div class="btn-group">
-                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">اختر الفئة <span class="caret"></span>
+                        <button class="btn btn-default dropdown-toggle hidden-xs" data-toggle="dropdown">اختر الفئة <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
                           <li class="checkbox">
@@ -64,7 +64,7 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="#">الصفحة الرئيسية</a></li>
+                  <li class="active"><a href="/">الصفحة الرئيسية</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">أقسام المتجر <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -74,7 +74,7 @@
                     </ul>
                   </li>
                   <li><a href="/contact.html">تواصل معنا</a></li>
-                  <li><button class="btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
+                  <li><button class="btn-shopping-cart btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
                 </ul>
               </div>
             </div>
@@ -188,12 +188,12 @@
             </div>
             <div class="row" id="row-most-sold">
               <h3>الأكثر مبيعًا</h3>
-              <div id="carousel-most-sold" class="carousel slide" data-ride="carousel">
+              <div id="carousel-most-sold" class="hidden-xs carousel slide" data-ride="carousel">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                   <div class="item active">
                     <div class="col-sm-3">
-                      <div class="product-thumbnail  thumbnail">
+                      <a href="/product.html" class="product-thumbnail  thumbnail">
                         <div class="overlay">
                           <div>
                             <button class="btn btn-default">
@@ -216,10 +216,10 @@
                             <span class="fa fa-star"></span>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
                     <div class="col-sm-3">
-                      <div class="product-thumbnail  thumbnail">
+                      <a href="/product.html" class="product-thumbnail  thumbnail">
                         <div class="overlay">
                           <div>
                             <button class="btn btn-default">
@@ -242,10 +242,10 @@
                             <span class="fa fa-star"></span>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
                     <div class="col-sm-3">
-                      <div class="product-thumbnail  thumbnail">
+                      <a href="/product.html" class="product-thumbnail  thumbnail">
                         <div class="overlay">
                           <div>
                             <button class="btn btn-default">
@@ -271,10 +271,10 @@
                             <span class="fa fa-star"></span>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
                     <div class="col-sm-3">
-                      <div class="product-thumbnail thumbnail">
+                      <a href="/product.html" class="product-thumbnail thumbnail">
                         <div class="overlay">
                           <div>
                             <button class="btn btn-default">
@@ -297,7 +297,7 @@
                             <span class="fa fa-star active"></span>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -306,6 +306,124 @@
                   <li data-target="#carousel-most-sold" data-slide-to="0" class="active"></li>
                   <li data-target="#carousel-most-sold" data-slide-to="1"></li>
                   <li data-target="#carousel-most-sold" data-slide-to="2"></li>
+                </ol>
+              </div>
+              <div id="carousel-most-sold-alternative" class="visible-xs carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <a href="/product.html" class="product-thumbnail  thumbnail">
+                      <div class="overlay">
+                        <div>
+                          <button class="btn btn-default">
+                            <span class="fa fa-cart-plus"></span>
+                            أضف للعربة
+                          </button>
+                        </div>
+                      </div>
+                      <img src="/images/most_sold_1.jpg">
+                      <div class="caption">
+                        <div class="clearfix">
+                          <h4 class="pull-left">شير بلوز من نافي</h4>
+                          <div class="pull-right price">500$</div>
+                        </div>
+                        <div class="product-rating">
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="/product.html" class="product-thumbnail  thumbnail">
+                      <div class="overlay">
+                        <div>
+                          <button class="btn btn-default">
+                            <span class="fa fa-cart-plus"></span>
+                            أضف للعربة
+                          </button>
+                        </div>
+                      </div>
+                      <img src="/images/most_sold_2.jpg">
+                      <div class="caption">
+                        <div class="clearfix">
+                          <h4 class="pull-left">فلورا تي شيرت</h4>
+                          <div class="pull-right price">200$</div>
+                        </div>
+                        <div class="product-rating">
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="/product.html" class="product-thumbnail  thumbnail">
+                      <div class="overlay">
+                        <div>
+                          <button class="btn btn-default">
+                            <span class="fa fa-cart-plus"></span>
+                            أضف للعربة
+                          </button>
+                        </div>
+                      </div>
+                      <div class="sale">
+                        50%
+                      </div>
+                      <img src="/images/most_sold_3.jpg">
+                      <div class="caption">
+                        <div class="clearfix">
+                          <h4 class="pull-left">جاكت أولادي</h4>
+                          <div class="pull-right price">450$</div>
+                        </div>
+                        <div class="product-rating">
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="/product.html" class="product-thumbnail thumbnail">
+                      <div class="overlay">
+                        <div>
+                          <button class="btn btn-default">
+                            <span class="fa fa-cart-plus"></span>
+                            أضف للعربة
+                          </button>
+                        </div>
+                      </div>
+                      <img src="/images/most_sold_4.jpg">
+                      <div class="caption">
+                        <div class="clearfix">
+                          <h4 class="pull-left">شنطة كروس بناتي</h4>
+                          <div class="pull-right price">650$</div>
+                        </div>
+                        <div class="product-rating">
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-most-sold-alternative" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-most-sold-alternative" data-slide-to="1"></li>
+                  <li data-target="#carousel-most-sold-alternative" data-slide-to="2"></li>
                 </ol>
               </div>
             </div>
@@ -532,7 +650,7 @@
                     <li><a href="#">نسائي</a></li>
                   </ul>
                 </li>
-                <li><a href="/contact">تواصل معنا</a></li>
+                <li><a href="/contact.html">تواصل معنا</a></li>
               </ul>
             </div>
             <span class="separator center-block"></span>
@@ -556,5 +674,6 @@
       </div>
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
+      <script src="js/index.js"></script>
     </body>
   </html>
