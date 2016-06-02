@@ -380,3 +380,21 @@ body {
 #carousel-product-images .item img {
   height: 300px;
 }
+
+#shopping-cart-contents td {
+  vertical-align: middle;
+}
+
+#shopping-cart-contents .media-body {
+  width: auto;
+  vertical-align: middle;
+}
+
+#shopping-cart-contents .media-object {
+  height: 64px;
+  width: 64px;
+}
+
+#shopping-cart-contents tfoot {
+  font-size: 130%;
+}
