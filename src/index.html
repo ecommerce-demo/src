@@ -10,7 +10,7 @@
     </head>
     <body>
       <div class="container">
-        <div class="row">
+        <div id="row-navbar" class="row">
           <nav class="navbar navbar-default">
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,7 +27,7 @@
               </div>
               
               <div class="nav navbar-nav navbar-left">
-                <form class="navbar-form" role="search">
+                <form id="form-search" class="navbar-form" role="search">
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="كلمة البحث">
                     <div class="input-group-btn">
@@ -35,9 +35,24 @@
                         <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">اختر الفئة <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                          <select multiple>
-                            <option value="1">رجالية</option>
-                          </select>
+                          <li class="checkbox">
+                            <label for="input-category-men">
+                              <input id="input-category-men" type="checkbox" value="men">
+                              رجالي
+                            </label>
+                          </li>
+                          <li>
+                            <label for="input-category-kids">
+                              <input id="input-category-kids" type="checkbox" value="kids">
+                              أولادي
+                            </label>
+                          </li>
+                          <li>
+                            <label for="input-category-women">
+                              <input id="input-category-women" type="checkbox" value="women">
+                              نسائي
+                            </label>
+                          </li>
                         </ul>
                       </div>
                       <button type="submit" class="btn btn-primary">ابحث</button>
@@ -51,18 +66,14 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="#">الصفحة الرئيسية</a></li>
                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">أقسام المتجر <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">أقسام المتجر <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">One more separated link</a></li>
+                      <li><a href="#">رجالي</a></li>
+                      <li><a href="#">أولادي</a></li>
+                      <li><a href="#">نسائي</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">تواصل معنا</a></li>
+                  <li><a href="/contact.html">تواصل معنا</a></li>
                   <li><button class="btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
                 </ul>
               </div>
@@ -73,7 +84,7 @@
           <div class="container-fluid">
             <div class="row" id="row-slider">
               <div id="carousel-jumbo" class="carousel slide" data-ride="carousel">
-                <a class="right custom-carousel-control" href="#carousel_jumbo" data-slide="prev">
+                <a class="right custom-carousel-control" href="#carousel-jumbo" data-slide="prev">
                   <span class="fa fa-chevron-right fa-2x"></span>
                 </a>
                 <div class="carousel-inner">
@@ -85,6 +96,7 @@
                       <div class="col-xs-12 col-sm-6">
                         <div class="jumbo-text">
                           <div class="sale large">50%</div>
+                          <span class="heading-small">أحدث المنتجات</span>
                           <h1>تي شيرت رجالي من فيميا</h1>
                           <button class="btn btn-primary btn-lg">
                             تسوق الآن
@@ -101,6 +113,7 @@
                       <div class="col-xs-12 col-sm-6">
                         <div class="jumbo-text">
                           <div class="sale large">50%</div>
+                          <span class="heading-small">أحدث المنتجات</span>
                           <h1>تي شيرت رجالي من فيميا</h1>
                           <button class="btn btn-primary btn-lg">
                             تسوق الآن
@@ -116,6 +129,7 @@
                       </div>
                       <div class="col-xs-12 col-sm-6">
                         <div class="jumbo-text">
+                          <span class="heading-small">أحدث المنتجات</span>
                           <h1>تي شيرت بولو</h1>
                           <button class="btn btn-primary btn-lg">
                             تسوق الآن
@@ -132,6 +146,7 @@
                       <div class="col-xs-12 col-sm-6">
                         <div class="jumbo-text">
                           <div class="sale large">50%</div>
+                          <span class="heading-small">أحدث المنتجات</span>
                           <h1>تي شيرت</h1>
                           <button class="btn btn-primary btn-lg">
                             تسوق الآن
@@ -147,12 +162,12 @@
                   <img data-target="#carousel-jumbo" data-slide-to="2" src="/images/tshirt_polo.jpg">
                   <img data-target="#carousel-jumbo" data-slide-to="3" src="/images/tshirt.jpg">
                 </div>
-                <a class="left custom-carousel-control" href="#carousel_jumbo" data-slide="next">
+                <a class="left custom-carousel-control" href="#carousel-jumbo" data-slide="next">
                   <span class="fa fa-chevron-left fa-2x"></span>
                 </a>
               </div>
             </div>
-            <div class="row" id="row_features">
+            <div class="row" id="row-features">
               <div class="col-md-6 col-md-offset-3 box">
                 <h3>مميزات المتجر</h3>
                 <div class="container-fluid">
@@ -171,14 +186,14 @@
                 </div>
               </div>
             </div>
-            <div class="row" id="row_most_sold">
+            <div class="row" id="row-most-sold">
               <h3>الأكثر مبيعًا</h3>
-              <div id="carousel_most_sold" class="carousel slide" data-ride="carousel">
+              <div id="carousel-most-sold" class="carousel slide" data-ride="carousel">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                   <div class="item active">
                     <div class="col-sm-3">
-                      <div class="thumbnail">
+                      <div class="product-thumbnail  thumbnail">
                         <div class="overlay">
                           <div>
                             <button class="btn btn-default">
@@ -193,7 +208,7 @@
                             <h4 class="pull-left">شير بلوز من نافي</h4>
                             <div class="pull-right price">500$</div>
                           </div>
-                          <div>
+                          <div class="product-rating">
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
@@ -204,7 +219,7 @@
                       </div>
                     </div>
                     <div class="col-sm-3">
-                      <div class="thumbnail">
+                      <div class="product-thumbnail  thumbnail">
                         <div class="overlay">
                           <div>
                             <button class="btn btn-default">
@@ -219,7 +234,7 @@
                             <h4 class="pull-left">فلورا تي شيرت</h4>
                             <div class="pull-right price">200$</div>
                           </div>
-                          <div>
+                          <div class="product-rating">
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
@@ -230,7 +245,7 @@
                       </div>
                     </div>
                     <div class="col-sm-3">
-                      <div class="thumbnail">
+                      <div class="product-thumbnail  thumbnail">
                         <div class="overlay">
                           <div>
                             <button class="btn btn-default">
@@ -248,7 +263,7 @@
                             <h4 class="pull-left">جاكت أولادي</h4>
                             <div class="pull-right price">450$</div>
                           </div>
-                          <div>
+                          <div class="product-rating">
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
@@ -259,7 +274,7 @@
                       </div>
                     </div>
                     <div class="col-sm-3">
-                      <div class="thumbnail">
+                      <div class="product-thumbnail thumbnail">
                         <div class="overlay">
                           <div>
                             <button class="btn btn-default">
@@ -274,7 +289,7 @@
                             <h4 class="pull-left">شنطة كروس بناتي</h4>
                             <div class="pull-right price">650$</div>
                           </div>
-                          <div>
+                          <div class="product-rating">
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
@@ -294,9 +309,9 @@
                 </ol>
               </div>
             </div>
-            <div class="row" id="row_brands">
+            <div class="row" id="row-brands">
               <h3>الماركات العالمية</h3>
-              <div class="product col-xs-12 col-md-6">
+              <div class="product col-xs-12 col-sm-6">
                 <div class="panel panel-default">
                   <div class="panel-body">
                     <div class="media">
@@ -317,7 +332,7 @@
                           <span class="product-description">
                             هناك حقيقة مثبتة من زمن وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
                           </span>
-                          <div>
+                          <div class="product-rating">
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
@@ -345,7 +360,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product col-xs-12 col-md-6">
+              <div class="product col-xs-12 col-sm-6">
                 <div class="panel panel-default">
                   <div class="panel-body">
                     <div class="media">
@@ -366,11 +381,11 @@
                           <span class="product-description">
                             هناك حقيقة مثبتة من زمن وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
                           </span>
-                          <div>
+                          <div class="product-rating">
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
-                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                           </div>
                           <div class="clearfix">
@@ -393,7 +408,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product col-xs-12 col-md-6">
+              <div class="product col-xs-12 col-sm-6">
                 <div class="panel panel-default">
                   <div class="panel-body">
                     <div class="media">
@@ -414,7 +429,7 @@
                           <span class="product-description">
                             هناك حقيقة مثبتة من زمن وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
                           </span>
-                          <div>
+                          <div class="product-rating">
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
@@ -441,7 +456,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product col-xs-12 col-md-6">
+              <div class="product col-xs-12 col-sm-6">
                 <div class="panel panel-default">
                   <div class="panel-body">
                     <div class="media">
@@ -462,7 +477,7 @@
                           <span class="product-description">
                             هناك حقيقة مثبتة من زمن وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
                           </span>
-                          <div>
+                          <div class="product-rating">
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
                             <span class="fa fa-star active"></span>
@@ -504,26 +519,33 @@
         <div id="footer" class="row">
           <div class="container-fluid">
             <div class="row">
-              <img id="footer_logo" src="images/logo_footer.png" alt="شعار عربي" >
+              <img id="footer-logo" src="images/logo_footer.png" alt="شعار عربي" >
             </div>
             <div class="row">
-              <ul id="footer_link_list">
+              <ul id="footer-link-list">
                 <li><a href="/">الصفحة الرئيسية</a></li>
-                <li><a href="#">أقسام المتجر</a></li>
+                <li class="dropup">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">أقسام المتجر <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">رجالي</a></li>
+                    <li><a href="#">أولادي</a></li>
+                    <li><a href="#">نسائي</a></li>
+                  </ul>
+                </li>
                 <li><a href="/contact">تواصل معنا</a></li>
               </ul>
             </div>
             <span class="separator center-block"></span>
-            <form class="form form-inline" id="form_subscription">
+            <form class="form form-inline" id="form-subscription">
               <div class="form-group">
-                <label for="input_email">تابع النشرة البريدية لأحدث العروض</label><br>
-                <input id="input_email" type="text" class="form-control" placeholder="البريد الإلكتروني">
+                <label for="input-email">تابع النشرة البريدية لأحدث العروض</label><br>
+                <input id="input-email" type="text" class="form-control" placeholder="البريد الإلكتروني">
                 <input class="btn btn-default btn-primary" type="submit" value="متابعة">
               </div>
             </form>
-            <div id="footer_copyright" class="row">
-              <span id="footer_copyright_text">جميع الحقوق محفوظة للمتجر لسنة 2016</span>
-              <div id="footer_social_links">
+            <div id="footer-copyright" class="row">
+              <span id="footer-copyright-text">جميع الحقوق محفوظة للمتجر لسنة 2016</span>
+              <div id="footer-social-links">
                 <a href="#"><span class="fa fa-facebook-square fa-lg"></span></a>
                 <a href="#"><span class="fa fa-twitter-square fa-lg"></span></a>
                 <a href="#"><span class="fa fa-instagram fa-lg"></span></a>

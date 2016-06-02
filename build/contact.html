@@ -1,0 +1,212 @@
+  <!DOCTYPE html>
+  <html lang="ar" dir="rtl">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/css/bootstrap.css">
+      <!--<link rel="stylesheet" href="/css/bootstrap-theme.css">-->
+      <link rel="stylesheet" href="/css/font-awesome.css">
+      <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+      <div class="container">
+        <div id="row-navbar" class="row">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img src="images/logo.png">
+                </a>
+              </div>
+              
+              <div class="nav navbar-nav navbar-left">
+                <form id="form-search" class="navbar-form" role="search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="كلمة البحث">
+                    <div class="input-group-btn">
+                      <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">اختر الفئة <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <label for="input-category-men">
+                              <input id="input-category-men" type="checkbox" value="men">
+                              رجالي
+                            </label>
+                          </li>
+                          <li>
+                            <label for="input-category-kids">
+                              <input id="input-category-kids" type="checkbox" value="kids">
+                              أولادي
+                            </label>
+                          </li>
+                          <li>
+                            <label for="input-category-women">
+                              <input id="input-category-women" type="checkbox" value="women">
+                              نسائي
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                      <button type="submit" class="btn btn-primary">ابحث</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">الصفحة الرئيسية</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">أقسام المتجر <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">رجالي</a></li>
+                      <li><a href="#">أولادي</a></li>
+                      <li><a href="#">نسائي</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="active" href="/contact.html">تواصل معنا</a></li>
+                  <li><button class="btn btn-default navbar-btn"><span class="fa fa-shopping-cart"></span></button></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div id="main" class="row">
+          <div class="container-fluid">
+            <div class="row" id="row-map">
+              <div id="map">
+                
+              </div>
+            </div>
+            <div id="row-navigation" class="row">
+              <ol class="breadcrumb">
+                <li><a href="/">الصفحة الرئيسية</a></li>
+                <li class="active">تواصل معنا</li>
+              </ol>
+            </div>
+            <div class="row" id="row-contact">
+              <div class="col-md-4">
+                <h3>معلومات التواصل</h3>
+                <ul id="list-contact-info">
+                  <li><span class="fa fa-phone fa-lg"></span>974.4422.7813</li>
+                  <li><span class="fa fa-envelope fa-lg"></span>info@araby.com</li>
+                  <li><span class="fa fa-map-marker fa-lg"></span>العنوان: القاهرة الكبرى، ميدان الحجاز بمصر الجديدة</li>
+                </ul>
+                <h3>اشترك في النشرة البريدية</h3>
+                <form id="form-contact-subscription" class="form">
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-xs-9">
+                        <input type="text" placeholder="البريد الإلكتروني" class="form-control" placeholder="email" name="email">
+                      </div>
+                      <div class="col-xs-3">
+                        <button class="btn btn-primary" type="submit">متابعة</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-8">
+                <h3>اترك رسالة<h3>
+                <form class="form" id="form-contact-send-message">
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-sm-6">
+                        <input class="form-control" name="name" type="text" placeholder="الاسم">
+                      </div>
+                      <div class="col-sm-6">
+                        <input class="form-control" name="email" type="email" placeholder="البريد الإلكتروني">
+                      </div>
+                      <div class="col-sm-12">
+                        <textarea placeholder="نص الرسالة" class="form-control" name="message" id="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="pull-right">
+                          <button type="submit" class="btn btn-primary">
+                            إرسال الرسالة <span class="fa fa-message"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div id="brands" class="row">
+          <span>المتجر وكيل معتمد لكبرى الشركات العالمية</span>
+          <span id="brand-logos">
+            <img class="brand-logo" src="images/lacoste.png" alt="LACOSTE">
+            <img class="brand-logo" src="images/adidas.png" alt="Adidas">
+            <img class="brand-logo" src="images/puma.png" alt="PUMA">
+            <img class="brand-logo" src="images/polo.png" alt="Polo">
+          </span>
+        </div>
+        <div id="footer" class="row">
+          <div class="container-fluid">
+            <div class="row">
+              <img id="footer-logo" src="images/logo_footer.png" alt="شعار عربي" >
+            </div>
+            <div class="row">
+              <ul id="footer-link-list">
+                <li><a href="/">الصفحة الرئيسية</a></li>
+                <li class="dropup">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">أقسام المتجر <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">رجالي</a></li>
+                    <li><a href="#">أولادي</a></li>
+                    <li><a href="#">نسائي</a></li>
+                  </ul>
+                </li>
+                <li><a href="/contact">تواصل معنا</a></li>
+              </ul>
+            </div>
+            <span class="separator center-block"></span>
+            <form class="form form-inline" id="form-subscription">
+              <div class="form-group">
+                <label for="input-email">تابع النشرة البريدية لأحدث العروض</label><br>
+                <input id="input-email" type="text" class="form-control" placeholder="البريد الإلكتروني">
+                <input class="btn btn-default btn-primary" type="submit" value="متابعة">
+              </div>
+            </form>
+            <div id="footer-copyright" class="row">
+              <span id="footer-copyright-text">جميع الحقوق محفوظة للمتجر لسنة 2016</span>
+              <div id="footer-social-links">
+                <a href="#"><span class="fa fa-facebook-square fa-lg"></span></a>
+                <a href="#"><span class="fa fa-twitter-square fa-lg"></span></a>
+                <a href="#"><span class="fa fa-instagram fa-lg"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="http://maps.googleapis.com/maps/api/js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var address = { lat: 30.1045013, lng: 31.3290253 };
+          var map = new google.maps.Map(document.getElementById("map"), {
+            center: address,
+            zoom: 15
+          });
+          var marker = new google.maps.Marker({
+            map: map,
+            position: address,
+            icon: "/images/map-marker-icon.png"
+          });
+        });
+      </script>
+    </body>
+  </html>
