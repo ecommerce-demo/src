@@ -106,7 +106,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-8">
+              <form class="col-md-8">
                 <div class="container-fluid">
                   <div class="col-xs-12">
                     <div class="clearfix">
@@ -186,14 +186,22 @@
                       </div>
                     </div>
                   </div>
+                  <div class="col-xs-12 col-md-6">
+                    العدد المطلوب:
+                    <select class="form-control" name="quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
                   <div class="col-xs-12">
-                    <button class="btn btn-primary btn-lg">
+                    <button type="submit" class="btn btn-primary btn-lg">
                       <span class="fa fa-cart-plus"></span>
                       إضافة لعربة الشراء
                     </button>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
             <div class="row" id="row-product-description">
               <h3>وصف المنتج</h3>
@@ -403,5 +411,14 @@
       </div>
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('.product-option').on('click', function() {
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass('active');
+            $(this).find('input').prop('checked', true);
+          });
+        });
+      </script>
     </body>
   </html>
