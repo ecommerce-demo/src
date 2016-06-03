@@ -14,7 +14,6 @@
         <div id="row-navbar" class="row">
           <nav class="navbar navbar-default">
             <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
@@ -26,14 +25,13 @@
                   <img src="images/logo.png">
                 </a>
               </div>
-              
               <div class="nav navbar-nav navbar-left">
                 <form id="form-search" class="navbar-form" role="search">
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="كلمة البحث" required>
                     <div class="input-group-btn">
                       <div class="btn-group">
-                        <button class="btn btn-default dropdown-toggle hidden-xs" data-toggle="dropdown">اختر الفئة <span class="caret"></span>
+                        <button id="form-search-pick-category" class="btn btn-default dropdown-toggle hidden-xs" data-toggle="dropdown">اختر الفئة <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
                           <li class="checkbox">
@@ -42,13 +40,13 @@
                               رجالي
                             </label>
                           </li>
-                          <li>
+                          <li class="checkbox">
                             <label for="input-category-kids">
                               <input id="input-category-kids" type="checkbox" value="kids">
                               أولادي
                             </label>
                           </li>
-                          <li>
+                          <li class="checkbox">
                             <label for="input-category-women">
                               <input id="input-category-women" type="checkbox" value="women">
                               نسائي
@@ -61,8 +59,6 @@
                   </div>
                 </form>
               </div>
-
-              <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="/">الصفحة الرئيسية</a></li>
@@ -83,7 +79,13 @@
         </div>
         <div id="main" class="row">
           <div class="container-fluid">
-            <div id="row-category">
+            <div id="row-navigation" class="row">
+              <ol class="breadcrumb">
+                <li><a href="/">الصفحة الرئيسية</a></li>
+                <li class="active">بحث متقدم</li>
+              </ol>
+            </div>
+            <div id="row-filter">
               <form class="col-md-3 form" id="form-category-filter">
                 <h3>تصفية النتائج</h3>
                 <div class="panel panel-default">
@@ -103,7 +105,22 @@
                       <input type="checkbox" name="category_shoes" checked>
                       أحذية
                       <small class="text-muted">(150)</small>
-                    </labelli>
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="category_jacket" checked>
+                      جاكت
+                      <small class="text-muted">(367)</small>
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="category_jacket" checked>
+                      بلوز
+                      <small class="text-muted">(54)</small>
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="category_jacket" checked>
+                      حقائب
+                      <small class="text-muted">(25)</small>
+                    </label>
                   </ul>
                 </div>
                 <div class="panel panel-default">
@@ -145,14 +162,14 @@
                 </div>
               </form>
               <div class="col-md-9">
-                <h3>تي شيرت</h3>
+                <h3>النتائج</h3>
                 <div class="col-sm-6 col-md-4">
                   <a href="/product.html" class="product-thumbnail  thumbnail">
                     <div class="overlay hidden-xs">
                       <div>
                         <button class="btn btn-default">
                           <span class="fa fa-cart-plus"></span>
-                          أضف للعربة
+                          إضافة للعربة
                         </button>
                       </div>
                     </div>
@@ -173,7 +190,7 @@
                         <div class="pull-right">
                           <button class="btn btn-default visible-xs">
                             <span class="fa fa-cart-plus"></span>
-                            أضف للعربة
+                            إضافة للعربة
                           </button>
                         </div>
                       </div>
@@ -186,15 +203,15 @@
                       <div>
                         <button class="btn btn-default">
                           <span class="fa fa-cart-plus"></span>
-                          أضف للعربة
+                          إضافة للعربة
                         </button>
                       </div>
                     </div>
-                    <img src="/images/most_sold_1.jpg">
+                    <img src="/images/most_sold_2.jpg">
                     <div class="caption">
                       <div class="clearfix">
-                        <h4 class="pull-left">شير بلوز من نافي</h4>
-                        <div class="pull-right price">500$</div>
+                        <h4 class="pull-left">فلورا تي شيرت</h4>
+                        <div class="pull-right price">200$</div>
                       </div>
                       <div class="clearfix">
                         <div class="pull-left product-rating">
@@ -207,7 +224,7 @@
                         <div class="pull-right">
                           <button class="btn btn-default visible-xs">
                             <span class="fa fa-cart-plus"></span>
-                            أضف للعربة
+                            إضافة للعربة
                           </button>
                         </div>
                       </div>
@@ -220,15 +237,18 @@
                       <div>
                         <button class="btn btn-default">
                           <span class="fa fa-cart-plus"></span>
-                          أضف للعربة
+                          إضافة للعربة
                         </button>
                       </div>
                     </div>
-                    <img src="/images/most_sold_1.jpg">
+                    <div class="sale">
+                      50%
+                    </div>
+                    <img src="/images/most_sold_3.jpg">
                     <div class="caption">
                       <div class="clearfix">
-                        <h4 class="pull-left">شير بلوز من نافي</h4>
-                        <div class="pull-right price">500$</div>
+                        <h4 class="pull-left">جاكت أولادي</h4>
+                        <div class="pull-right price">450$</div>
                       </div>
                       <div class="clearfix">
                         <div class="pull-left product-rating">
@@ -241,7 +261,75 @@
                         <div class="pull-right">
                           <button class="btn btn-default visible-xs">
                             <span class="fa fa-cart-plus"></span>
-                            أضف للعربة
+                            إضافة للعربة
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <a href="/product.html" class="product-thumbnail thumbnail">
+                        <div class="overlay hidden-xs">
+                          <div>
+                            <button class="btn btn-default">
+                              <span class="fa fa-cart-plus"></span>
+                              إضافة للعربة
+                            </button>
+                          </div>
+                        </div>
+                        <img src="/images/hm_4.jpg">
+                        <div class="caption">
+                          <div class="clearfix">
+                            <h4 class="pull-left">شنطة كروس بناتي</h4>
+                            <div class="pull-right price">650$</div>
+                          </div>
+                          <div class="clearfix">
+                            <div class="pull-left product-rating">
+                              <span class="fa fa-star active"></span>
+                              <span class="fa fa-star active"></span>
+                              <span class="fa fa-star active"></span>
+                              <span class="fa fa-star active"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                            <div class="pull-right">
+                              <button class="btn btn-default visible-xs">
+                                <span class="fa fa-cart-plus"></span>
+                                إضافة للعربة
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <a href="/product.html" class="product-thumbnail  thumbnail">
+                    <div class="overlay hidden-xs">
+                      <div>
+                        <button class="btn btn-default">
+                          <span class="fa fa-cart-plus"></span>
+                          إضافة للعربة
+                        </button>
+                      </div>
+                    </div>
+                    <img src="/images/adidas_1.jpg">
+                    <div class="caption">
+                      <div class="clearfix">
+                        <h4 class="pull-left">قميص تك فت بيز</h4>
+                        <div class="pull-right price">35$</div>
+                      </div>
+                      <div class="clearfix">
+                        <div class="pull-left product-rating">
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                        <div class="pull-right">
+                          <button class="btn btn-default visible-xs">
+                            <span class="fa fa-cart-plus"></span>
+                            إضافة للعربة
                           </button>
                         </div>
                       </div>
@@ -254,15 +342,15 @@
                       <div>
                         <button class="btn btn-default">
                           <span class="fa fa-cart-plus"></span>
-                          أضف للعربة
+                          إضافة للعربة
                         </button>
                       </div>
                     </div>
-                    <img src="/images/most_sold_1.jpg">
+                    <img src="/images/adidas_2.jpg">
                     <div class="caption">
                       <div class="clearfix">
-                        <h4 class="pull-left">شير بلوز من نافي</h4>
-                        <div class="pull-right price">500$</div>
+                        <h4 class="pull-left">حذاء بيور بوست الرياضي</h4>
+                        <div class="pull-right price">150$</div>
                       </div>
                       <div class="clearfix">
                         <div class="pull-left product-rating">
@@ -275,7 +363,7 @@
                         <div class="pull-right">
                           <button class="btn btn-default visible-xs">
                             <span class="fa fa-cart-plus"></span>
-                            أضف للعربة
+                            إضافة للعربة
                           </button>
                         </div>
                       </div>
@@ -288,15 +376,15 @@
                       <div>
                         <button class="btn btn-default">
                           <span class="fa fa-cart-plus"></span>
-                          أضف للعربة
+                          إضافة للعربة
                         </button>
                       </div>
                     </div>
-                    <img src="/images/most_sold_1.jpg">
+                    <img src="/images/puma_1.jpg">
                     <div class="caption">
                       <div class="clearfix">
-                        <h4 class="pull-left">شير بلوز من نافي</h4>
-                        <div class="pull-right price">500$</div>
+                        <h4 class="pull-left">حذاء سويدي الرياضي</h4>
+                        <div class="pull-right price">75$</div>
                       </div>
                       <div class="clearfix">
                         <div class="pull-left product-rating">
@@ -309,7 +397,7 @@
                         <div class="pull-right">
                           <button class="btn btn-default visible-xs">
                             <span class="fa fa-cart-plus"></span>
-                            أضف للعربة
+                            إضافة للعربة
                           </button>
                         </div>
                       </div>
@@ -322,15 +410,15 @@
                       <div>
                         <button class="btn btn-default">
                           <span class="fa fa-cart-plus"></span>
-                          أضف للعربة
+                          إضافة للعربة
                         </button>
                       </div>
                     </div>
-                    <img src="/images/most_sold_1.jpg">
+                    <img src="/images/puma_2.jpg">
                     <div class="caption">
                       <div class="clearfix">
-                        <h4 class="pull-left">شير بلوز من نافي</h4>
-                        <div class="pull-right price">500$</div>
+                        <h4 class="pull-left">حذاء التنس سماش بَك</h4>
+                        <div class="pull-right price">65$</div>
                       </div>
                       <div class="clearfix">
                         <div class="pull-left product-rating">
@@ -343,7 +431,7 @@
                         <div class="pull-right">
                           <button class="btn btn-default visible-xs">
                             <span class="fa fa-cart-plus"></span>
-                            أضف للعربة
+                            إضافة للعربة
                           </button>
                         </div>
                       </div>
@@ -356,7 +444,7 @@
                       <div>
                         <button class="btn btn-default">
                           <span class="fa fa-cart-plus"></span>
-                          أضف للعربة
+                          إضافة للعربة
                         </button>
                       </div>
                     </div>
@@ -377,75 +465,7 @@
                         <div class="pull-right">
                           <button class="btn btn-default visible-xs">
                             <span class="fa fa-cart-plus"></span>
-                            أضف للعربة
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a href="/product.html" class="product-thumbnail  thumbnail">
-                    <div class="overlay hidden-xs">
-                      <div>
-                        <button class="btn btn-default">
-                          <span class="fa fa-cart-plus"></span>
-                          أضف للعربة
-                        </button>
-                      </div>
-                    </div>
-                    <img src="/images/most_sold_1.jpg">
-                    <div class="caption">
-                      <div class="clearfix">
-                        <h4 class="pull-left">شير بلوز من نافي</h4>
-                        <div class="pull-right price">500$</div>
-                      </div>
-                      <div class="clearfix">
-                        <div class="pull-left product-rating">
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star"></span>
-                        </div>
-                        <div class="pull-right">
-                          <button class="btn btn-default visible-xs">
-                            <span class="fa fa-cart-plus"></span>
-                            أضف للعربة
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a href="/product.html" class="product-thumbnail  thumbnail">
-                    <div class="overlay hidden-xs">
-                      <div>
-                        <button class="btn btn-default">
-                          <span class="fa fa-cart-plus"></span>
-                          أضف للعربة
-                        </button>
-                      </div>
-                    </div>
-                    <img src="/images/most_sold_1.jpg">
-                    <div class="caption">
-                      <div class="clearfix">
-                        <h4 class="pull-left">شير بلوز من نافي</h4>
-                        <div class="pull-right price">500$</div>
-                      </div>
-                      <div class="clearfix">
-                        <div class="pull-left product-rating">
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star"></span>
-                        </div>
-                        <div class="pull-right">
-                          <button class="btn btn-default visible-xs">
-                            <span class="fa fa-cart-plus"></span>
-                            أضف للعربة
+                            إضافة للعربة
                           </button>
                         </div>
                       </div>
@@ -503,7 +523,7 @@
               </ul>
             </div>
             <span class="separator hidden-xs center-block"></span>
-            <form class="form hidden-xs form-inline" id="form-subscription">
+            <form class="form hidden-xs form-inline" id="form-footer-subscription">
               <div class="form-group">
                 <label for="input-email">تابع النشرة البريدية لأحدث العروض</label><br>
                 <input id="input-email" type="text" class="form-control" placeholder="البريد الإلكتروني" required>

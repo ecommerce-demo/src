@@ -27,6 +27,18 @@ body {
   width: 100%;
 }
 
+#form-search-pick-category {
+  border-color: lightgray;
+}
+
+#form-search .btn-primary {
+  border-color: #FF3956;
+}
+
+#form-search .btn-primary {
+  background: #FF3956;
+}
+
 #brands {
   text-align: center;
   background-color: #DBEEFA;
@@ -49,16 +61,14 @@ body {
 #carousel-jumbo .custom-carousel-control {
   background: none;
   color: gray;
-  height: 100%;
 }
 
-.jumbo-text,  .jumbo-text .heading-small {
-  border: 2px solid #CDCDCD;
+.jumbo-text .heading-small {
+  border: 1px solid lightgray;
   background-color: white;
 }
 
 .jumbo-text {
-  border: 2px solid #CDCDCD;
   padding: 15px;
   padding-bottom: 50px;
 }
@@ -68,6 +78,7 @@ body {
   top: -10px;
   left: -2px;
   padding: 5px;
+  transform: rotate(5deg);
 }
 
 .carousel .custom-indicators > * {
@@ -85,10 +96,13 @@ body {
   padding-top: 50px;
 }
 
+#carousel-jumbo .custom-indicators {
+  bottom: -10px;
+}
+
 #carousel-jumbo .item img {
   max-height: 300px;
   max-width: 100%;
-  height: 300px;
 }
 
 .carousel .carousel-control > * {
@@ -170,6 +184,13 @@ body {
   text-align: center;
 }
 
+.product-thumbnail .overlay .btn {
+  color: rgb(0, 206, 216);
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+
 .product-thumbnail .overlay:hover {
   opacity: 1;
 }
@@ -229,17 +250,22 @@ body {
   border-top: 1px solid #555555;
 }
 
-#form-subscription {
+#form-footer-subscription {
   margin: 15px 0;
 }
 
-#form-subscription input[type="text"] {
+#form-footer-subscription input[type="text"] {
   background-color: rgba(49, 49, 49, 0.9);
   border: none;
 }
 
-#form-subscription input[type="text"]::-webkit-input-placeholder {
+#form-footer-subscription input[type="text"]::-webkit-input-placeholder {
   color: inherit;
+}
+
+#form-footer-subscription .btn-primary {
+  color: inherit;
+  font-weight: bold;
 }
 
 #footer-copyright {
@@ -263,10 +289,6 @@ body {
 
 #row-brands {
   border-top: 1px solid #ECECEC;
-}
-
-#row-brands .product {
-  height: 250px;
 }
 
 #row-brands .product-text {
@@ -399,7 +421,7 @@ body {
   font-size: 130%;
 }
 
-#row-category h3, #row-contact h3 {
+#row-filter h3, #row-contact h3 {
   border-bottom: 1px solid lightgray;
   line-height: 150%;
 }
@@ -412,7 +434,7 @@ body {
   #footer {
     background: url("/images/bg_footer_1.png") top right no-repeat #1F1E1E;
   }
-  
+
   .jumbo-text {
     border: none;
     background-color: transparent;
@@ -420,6 +442,10 @@ body {
   
   #carousel-jumbo .carousel-inner {
     height: 550px;
+  }
+
+  #carousel-jumbo .item h1 {
+    font-size: 30px;
   }
   
   .product-thumbnail .overlay {

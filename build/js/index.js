@@ -38,30 +38,4 @@ $(document).ready(function() {
   $('input[name="payment_method"]').on('change', function() {
     $('#credit-card-info').toggle();
   });
-  
-  function isPaymentMethodCreditCard() {
-    return $("#radio-payment-credit-card").prop('checked');
-  }
-  
-  $('#form-confirm-checkout').validate({
-    errorClass: 'text-danger',
-    rules: {
-      credit_card_number: {
-        required: true,
-        depends: isPaymentMethodCreditCard
-      },
-      credit_card_expiration_month: {
-        required: true,
-        depends: isPaymentMethodCreditCard
-      },
-      credit_card_expiration_year: {
-        required: true,
-        depends: isPaymentMethodCreditCard
-      },
-      credit_card_cvv: {
-        required: true,
-        depends: isPaymentMethodCreditCard
-      }
-    }
-  });
 });
