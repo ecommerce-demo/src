@@ -14,7 +14,7 @@ function recalculateTotal() {
         
 $(document).ready(function() {
   $('.btn-shopping-cart').on('click', function() {
-    window.location = '/checkout.html';
+    window.location = 'checkout.html';
   });
   
   $('.product-option').on('click', function() {

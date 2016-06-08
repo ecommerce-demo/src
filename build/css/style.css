@@ -121,7 +121,7 @@ body {
   box-shadow: 0px 0px 15px lightgray;
   padding: 15px 0;
   background-color: white;
-  background: url("/images/bg_features.png") -10px -20px no-repeat white;
+  background: url("images/bg_features.png") -10px -20px no-repeat white;
 }
 
 #row-features .feature:not(:nth-of-type(1)) {
@@ -219,7 +219,7 @@ body {
 #footer {
   text-align: center;
   font-weight: bold;
-  background: url("/images/bg_footer_1.png") top right no-repeat, url("/images/bg_footer_2.png") top left no-repeat #1F1E1E;
+  background: url("images/bg_footer_1.png") top right no-repeat, url("images/bg_footer_2.png") top left no-repeat #1F1E1E;
 }
 
 #footer-logo {
@@ -434,7 +434,7 @@ body {
 
 @media screen and (max-width: 767px) {
   #footer {
-    background: url("/images/bg_footer_1.png") top right no-repeat #1F1E1E;
+    background: url("images/bg_footer_1.png") top right no-repeat #1F1E1E;
   }
 
   .jumbo-text {
