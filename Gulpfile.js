@@ -10,7 +10,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('css', ['fonts'], function() {
-  gulp.src('src/css/*.css')
+  return gulp.src('src/css/*.css')
   .pipe(flip())
   .on('error', gutil.log)
   .pipe(gulp.dest('build/css'))
@@ -18,21 +18,21 @@ gulp.task('css', ['fonts'], function() {
 });
 
 gulp.task('html', function() {
-  gulp.src('src/*.html')
+  return gulp.src('src/*.html')
   .on('error', gutil.log)
   .pipe(gulp.dest('build'))
   .pipe(connect.reload());
 });
 
 gulp.task('js', function() {
-  gulp.src('src/js/*.js')
+  return gulp.src('src/js/*.js')
   .on('error', gutil.log)
   .pipe(gulp.dest('build/js'))
   .pipe(connect.reload());
 });
 
 gulp.task('images', function() {
-  gulp.src('src/images/*')
+  return gulp.src('src/images/*')
   .on('error', gutil.log)
   .pipe(gulp.dest('build/images'))
   .pipe(connect.reload());
