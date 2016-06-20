@@ -1,5 +1,16 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #565656;
+}
+
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.custom-container > .row:not(#footer):not(:first-child) {
+  flex-grow: 1;
 }
 
 .custom-navbar {
@@ -14,35 +25,63 @@ body {
 
 .custom-btn {
   border-radius: 1px;
+  transition-property: color border-color background-color;
+  transition-duration: 0.3s;
 }
 
 .custom-btn-default, .custom-form-control {
   color: #868686;
   border: 1px solid #EBEBEB;
+  box-shadow: none;
 }
 
 .custom-form-control {
   color: #868686;
-  border-radius: 0px;
+  border-radius: 2px;
+}
+
+.custom-input-lg {
+  border-width: 2px;
+  border-radius: 3px;
 }
 
 .custom-btn-primary {
   color: #F8AD47;
   border-color: #F8AD47;
   background-color: transparent;
-  transition: color 0.3s;
 }
 
 .custom-btn-primary:hover,
 .custom-btn-primary:focus,
 .custom-btn-primary:active,
-.custom-btn-primary:active:hover {
+.custom-btn-primary:active:hover,
+.custom-btn-primary:active:focus {
   color: #AB7731;
   border-color: #AB7731;
   background-color: transparent;
 }
 
+.custom-btn-primary2 {
+  color: white;
+  background-color: #F8AD47;
+  border-color: #F8AD47;
+}
+
+.custom-btn-primary2:hover,
+.custom-btn-primary2:focus,
+.custom-btn-primary2:active,
+.custom-btn-primary2:active:hover,
+.custom-btn-primary2:active:focus {
+  border-color: #AB7731;
+  background-color: #AB7731;
+}
+
 .custom-form-control:focus {
+  border-color: #AB7731;
+  box-shadow: 0 0 2px 0 #AB7731;
+}
+
+.custom-navbar .custom-form-control:focus {
   border-color: #c2101E;
   box-shadow: 0 0 2px 0 #c2101E;
 }
@@ -82,7 +121,6 @@ body {
   background-color: #FFE7EA;
 }
 
-
 #btn-shopping-cart {
   padding: 5px 10px;
   margin-left: 10px;
@@ -103,12 +141,12 @@ body {
 #carousel-featured .item .featured-category {
   border: 1px solid #DDDDDB;
   display: inline-block;
-  padding: 5px;
+  padding: 10px;
   position: absolute;
   top: -10px;
   right: -10px;
   background-color: #F7F8F3;
-  min-width: 75px;
+  min-width: 100px;
   text-align: center;
 }
 
@@ -131,6 +169,8 @@ body {
   margin-top: 10px;
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: larger;
 }
 
@@ -287,7 +327,7 @@ body {
 }
 
 .product-thumbnail img {
-  max-height: 250px;
+  height: 250px;
   background: #FAFAFA;
 }
 
@@ -424,9 +464,7 @@ body {
 }
 
 #footer-nav form button {
-  color: #404040;
-  background-color: #F8AD47;
-  border: none;
+  color: inherit;
 }
 
 #footer-copyright-social {
@@ -518,10 +556,83 @@ body {
   #carousel-featured .item img {
     height: 275px;
   }
+
+  .product-thumbnail img {
+    max-height: 200px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar form {
     max-width: 190px;
   }
+
+  #carousel-featured .carousel-indicators {
+    right: 63%;
+  }
+
+  #carousel-featured .carousel-indicators img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+/* صفحة تواصل معنا */
+
+#map {
+  height: 250px;
+  width: 100%;
+}
+
+#list-contact-info {
+  list-style: none;
+  padding-right: initial;
+}
+
+#list-contact-info .fa {
+  color: #F8AD47;
+  margin: 10px;
+  width: 2em;
+  text-align: center;
+}
+
+.custom-heading {
+  border-bottom: 2px solid #EBEBEB;
+  padding-bottom: 15px;
+  margin-top: 30px;
+}
+
+.custom-breadcrumb {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: transparent;
+}
+
+.custom-breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+.custom-breadcrumb a:hover {
+  color: #F8AD47;
+}
+
+.custom-breadcrumb .active {
+  color: #DDDDDB;
+}
+
+.breadcrumb > li + li:before {
+  content: '>';
+  color: #565656;
+}
+
+#form-contact-send-message [type="submit"] {
+  width: 200px;
+}
+
+#form-contact-send-message textarea {
+  height: 120px;
 }
