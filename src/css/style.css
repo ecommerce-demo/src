@@ -702,6 +702,10 @@ body {
   padding-top: 15px;
 }
 
+#form-category-filter .form-buttons {
+  padding: 15px;
+}
+
 /* صفحة عربة الشراء */
 h1, h2 {
   font-weight: bold;

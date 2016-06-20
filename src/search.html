@@ -99,81 +99,86 @@
       </div>
       <div class="row">
         <div class="container">
-          <form class="col-md-3 form add-borders" id="form-category-filter">
-            <!--<h3 class="custom-heading">تصفية النتائج</h3>-->
-            <div class="panel panel-default custom-panel">
-              <div class="panel-heading">تصفية بالفئة</div>
-              <ul class="list-group custom-list-group">
-                <label class="list-group-item">
-                  <input type="checkbox" name="category_tshirt" checked>
-                  تي شيرت 
-                  <small class="text-muted custom-text-muted">(200)</small>
-                </label>
-                <label class="list-group-item">
-                  <input type="checkbox" name="category_pants" checked>
-                  بناطيل
-                  <small class="text-muted custom-text-muted">(260)</small>
-                </label>
-                <label class="list-group-item">
-                  <input type="checkbox" name="category_shoes" checked>
-                  أحذية
-                  <small class="text-muted custom-text-muted">(150)</small>
-                </label>
-                <label class="list-group-item">
-                  <input type="checkbox" name="category_jacket" checked>
-                  جاكت
-                  <small class="text-muted custom-text-muted">(367)</small>
-                </label>
-                <label class="list-group-item">
-                  <input type="checkbox" name="category_jacket" checked>
-                  بلوز
-                  <small class="text-muted custom-text-muted">(54)</small>
-                </label>
-                <label class="list-group-item">
-                  <input type="checkbox" name="category_jacket" checked>
-                  حقائب
-                  <small class="text-muted custom-text-muted">(25)</small>
-                </label>
-              </ul>
-            </div>
-            <div class="panel panel-default custom-panel">
-              <div class="panel-heading">تصفية بالماركة</div>
-              <ul class="list-group custom-list-group">
-                <label class="list-group-item">
-                  <input type="checkbox" name="brand_adidas" checked>
-                  Adidas
-                </label>
-                <label class="list-group-item">
-                  <input type="checkbox" name="brand_lacoste" checked>
-                  Lacoste
-                </label>
-                <label class="list-group-item">
-                  <input type="checkbox" name="brand_polo" checked>
-                  Polo
-                </label>
-                <label class="list-group-item">
-                  <input type="checkbox" name="brand_puma" checked>
-                  Puma
-                </label>
-              </ul>
-            </div>
-            <div class="panel panel-default custom-panel">
-              <div class="panel-heading">تصفية بالسعر</div>
-              <div class="panel-body">
-                <div>
-                  بين <span id="amount-price-min">100</span>$ و<span id="amount-price-max">700</span>$
+          <div class="col-md-3">
+            <form class="form" id="form-category-filter">
+              <div class="add-borders">
+                <div class="panel panel-default custom-panel">
+                  <div class="panel-heading">تصفية بالفئة</div>
+                  <ul class="list-group custom-list-group">
+                    <label class="list-group-item">
+                      <input type="checkbox" name="category_tshirt" checked>
+                      تي شيرت 
+                      <small class="text-muted custom-text-muted">(200)</small>
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="category_pants" checked>
+                      بناطيل
+                      <small class="text-muted custom-text-muted">(260)</small>
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="category_shoes" checked>
+                      أحذية
+                      <small class="text-muted custom-text-muted">(150)</small>
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="category_jacket" checked>
+                      جاكت
+                      <small class="text-muted custom-text-muted">(367)</small>
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="category_jacket" checked>
+                      بلوز
+                      <small class="text-muted custom-text-muted">(54)</small>
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="category_jacket" checked>
+                      حقائب
+                      <small class="text-muted custom-text-muted">(25)</small>
+                    </label>
+                  </ul>
                 </div>
-                <input type="hidden" id="input-price-max" name="price_max">
-                <input type="hidden" id="input-price-min" name="price_min">
-                <div id="input-price-range"></div>
+                <div class="panel panel-default custom-panel">
+                  <div class="panel-heading">تصفية بالماركة</div>
+                  <ul class="list-group custom-list-group">
+                    <label class="list-group-item">
+                      <input type="checkbox" name="brand_adidas" checked>
+                      Adidas
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="brand_lacoste" checked>
+                      Lacoste
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="brand_polo" checked>
+                      Polo
+                    </label>
+                    <label class="list-group-item">
+                      <input type="checkbox" name="brand_puma" checked>
+                      Puma
+                    </label>
+                  </ul>
+                </div>
+                <div class="panel panel-default custom-panel">
+                  <div class="panel-heading">تصفية بالسعر</div>
+                  <div class="panel-body">
+                    <div>
+                      بين <span id="amount-price-min">100</span>$ و<span id="amount-price-max">700</span>$
+                    </div>
+                    <input type="hidden" id="input-price-max" name="price_max">
+                    <input type="hidden" id="input-price-min" name="price_min">
+                    <div id="input-price-range"></div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="form-group col-xs-12">
-              <button type="submit" id="btn-category-filter" class="btn btn-primary custom-btn custom-btn-primary2 btn-lg btn-block">
-                تصفية البحث
-              </button>
-            </div>
-          </form>
+              <div class="form-buttons">
+                <div class="form-group">
+                  <button type="submit" id="btn-category-filter" class="btn btn-primary custom-btn custom-btn-primary2 btn-lg btn-block">
+                    تصفية البحث
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
           <div id="search-results" class="col-md-9">
             <h3 class="custom-heading">النتائج</h3>
             <div class="col-xs-6 col-sm-4">
