@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
     $('#price-value').text(total);
     if (!total) {
-      $('#form-checkout [type="submit"]').prop('disabled', true);
+      $('#form-checkout [type="submit"], #form-confirm-checkout [type="submit"]').prop('disabled', true);
     }
   }
 
@@ -38,9 +38,5 @@ $(document).ready(function() {
   $('#shopping-cart-contents .btn-delete').on('click', function() {
     $(this).parents('tr').remove();
     recalculateTotal();
-  });
-  
-  $('input[name="payment_method"]').on('change', function() {
-    $('#credit-card-info').toggle();
   });
 });
