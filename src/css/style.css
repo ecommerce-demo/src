@@ -318,9 +318,9 @@ body {
   background-color: #565656;
 }
 
-#row-brands > .container > h3 {
+#row-brands h3 {
   padding-top: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   margin-right: 15px;
   border-top: 1px solid #EBEBEB;
 }
@@ -370,14 +370,16 @@ body {
 
 #brands {
   background-color: #DCEEFA;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-top: 35px;
 }
 
 #brands img {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 #footer-nav {
