@@ -25,8 +25,13 @@ gulp.task('js', function() {
 });
 
 gulp.task('fonts', function() {
-  return gulp.src('src/fonts/*')
+  var jfFlat = gulp.src('src/css/font/*')
+  .pipe(gulp.dest('build/css/font'));
+
+  var otherFonts = gulp.src('src/fonts/*')
   .pipe(gulp.dest('build/fonts'))
+  
+  return merge(jfFlat, otherFonts)
   .pipe(connect.reload());
 });
 
