@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var connect = require('gulp-connect');
+var flipper = require('gulp-css-flipper');
 
 gulp.task('connect', function() {
   connect.server({
@@ -21,6 +22,7 @@ gulp.task('html', function() {
 
 gulp.task('css', function() {
   return gulp.src('src/css/*.css')
+  .pipe(flipper())
   .pipe(gulp.dest('build/css'))
   .pipe(connect.reload());
 });
