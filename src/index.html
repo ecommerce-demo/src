@@ -20,16 +20,37 @@
             <div class="nav navbar-nav navbar-left">
               <form class="navbar-form">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="كلمة البحث..." required>
+                  <input type="text" class="form-control custom-form-control" placeholder="كلمة البحث..." required>
                   <div class="input-group-btn">
                     <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                       اختر الفئة
                       <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      <li>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" name="search-category" value="men">
+                            رجالي
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" name="search-category" value="women">
+                            نسائي
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" name="search-category" value="kids">
+                            أطفال
+                          </label>
+                        </div>
+                      </li>
                     </ul>
                     <button type="submit" class="btn btn-primary">
                       ابحث

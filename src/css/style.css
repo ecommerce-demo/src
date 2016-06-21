@@ -5,3 +5,10 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+.custom-form-control {
+  color: #868686;
+  border: 1px solid #EBEBEB;
+  box-shadow: none;
+  border-radius: 2px;
+}
