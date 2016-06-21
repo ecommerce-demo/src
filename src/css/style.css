@@ -11,6 +11,8 @@
   border: 1px solid #EBEBEB;
   box-shadow: none;
   border-radius: 2px;
+  transition-property: border-color, background-color;
+  transition-duration: 0.1s;
 }
 
 .custom-form-control:focus {
