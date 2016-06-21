@@ -105,11 +105,13 @@
           <form id="form-checkout" action="payment.html">
             <table id="shopping-cart-contents" class="table table-stripped">
               <thead>
-                <th>المنتج</th>
-                <th>السعر</th>
-                <th>العدد المطلوب</th>
-                <th>السعر الإجمالي</th>
-                <th></th>
+                <tr>
+                  <th>المنتج</th>
+                  <th class="hidden-xs">السعر</th>
+                  <th>العدد المطلوب</th>
+                  <th>السعر الإجمالي</th>
+                  <th></th>
+                </tr>
               </thead>
               <tbody>
                 <tr data-price="400">
@@ -117,7 +119,7 @@
                     <input name="product[0]" type="hidden" value="تي شيرت لاكوست">
                     <div class="media">
                       <div class="media-left">
-                        <img src="images/lacoste_1.jpg" class="media-object">
+                        <img src="images/lacoste_1.jpg" alt="تي شيرت لاكوست" class="media-object">
                       </div>
                       <div class="media-body">
                         <h4 class="media-heading">
@@ -129,7 +131,7 @@
                       </div>
                     </div>
                   </td>
-                  <td>400$</td>
+                  <td class="hidden-xs">400$</td>
                   <td>
                     <select name="quantity[0]" class="form-control custom-form-control select-inline">
                       <option value="1">1</option>
@@ -141,7 +143,12 @@
                     800$
                   </td>
                   <td>
-                    <button type="button" class="btn-delete btn btn-danger custom-btn custom-btn-danger">حذف</button>
+                    <button type="button" class="btn-delete btn btn-danger custom-btn custom-btn-danger">
+                      <span class="hidden-xs">حذف</span>
+                      <span class="visible-xs">
+                        <i class="fa fa-times"></i>
+                      </span>
+                    </button>
                   </td>
                 </tr>
                 <tr data-price="300">
@@ -149,7 +156,7 @@
                     <input name="product[1]" type="hidden" value="تي شيرت أديداس">
                     <div class="media">
                       <div class="media-left">
-                        <img src="images/tshirt.jpg" class="media-object">
+                        <img src="images/tshirt.jpg" alt="تي شيرت أديداس" class="media-object">
                       </div>
                       <div class="media-body">
                         <h4 class="media-heading">
@@ -161,7 +168,7 @@
                       </div>
                     </div>
                   </td>
-                  <td>300$</td>
+                  <td class="hidden-xs">300$</td>
                   <td>
                     <select name="quantity[1]" class="form-control custom-form-control select-inline">
                       <option value="1">1</option>
@@ -173,18 +180,25 @@
                     300$
                   </td>
                   <td>
-                    <button type="button" class="btn-delete btn btn-danger custom-btn custom-btn-danger">حذف</button>
+                    <button type="button" class="btn-delete btn btn-danger custom-btn custom-btn-danger">
+                      <span class="hidden-xs">حذف</span>
+                      <span class="visible-xs">
+                        <i class="fa fa-times"></i>
+                      </span>
+                    </button>
                   </td>
                 </tr>
               </tbody>
               <tfoot>
-                <td colspan="5">
-                  <span class="text-muted custom-text-muted">
-                    السعر الإجمالي للمنتجات:
-                  </span>
-                  <span id="price-value">1200</span>
-                  دولار
-                </td>
+                <tr>
+                  <td colspan="5">
+                    <span class="text-muted custom-text-muted">
+                      السعر الإجمالي للمنتجات:
+                    </span>
+                    <span id="price-value">1200</span>
+                    دولار
+                  </td>
+                </tr>
               </tfoot>
             </table>
             <div class="col-xs-12 form-group">
@@ -201,7 +215,7 @@
         </div>
         <div class="row" id="row-suggestions">
           <h3>اقترحنا لك</h3>
-          <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="col-xs-12 col-sm-4 col-md-3">
             <div class="product-thumbnail thumbnail">
               <div class="overlay hidden-xs hidden-sm">
                 <button class="btn btn-default custom-btn custom-btn-default">
@@ -231,7 +245,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="col-xs-12 col-sm-4 col-md-3">
             <div class="product-thumbnail thumbnail">
               <div class="overlay hidden-xs hidden-sm">
                 <button class="btn btn-default custom-btn custom-btn-default">
@@ -261,7 +275,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="col-xs-12 col-sm-4 col-md-3">
             <div class="product-thumbnail thumbnail">
               <div class="overlay">
                 <button class="btn btn-default custom-btn custom-btn-default">
@@ -292,7 +306,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-3 hidden-sm">
+          <div class="col-xs-12 col-sm-4 col-md-3 hidden-sm">
             <div class="product-thumbnail thumbnail">
               <div class="overlay">
                 <button class="btn btn-default custom-btn custom-btn-default">

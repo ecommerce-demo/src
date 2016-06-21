@@ -104,15 +104,15 @@
             <div id="carousel-product-images" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="images/product_1.jpg">
+                  <img src="images/product_1.jpg" alt="صورة أمامية للقميص">
                 </div>
                 <div class="item">
-                  <img src="images/product_2.jpg">
+                  <img src="images/product_2.jpg" alt="صورة خلفية للقميص">
                 </div>
               </div>
               <div class="carousel-indicators custom-carousel-indicators">
-                <img data-target="#carousel-product-images" data-slide-to="0" class="active" src="images/product_1.jpg">
-                <img data-target="#carousel-product-images" data-slide-to="1" src="images/product_2.jpg">
+                <img data-target="#carousel-product-images" data-slide-to="0" class="active" src="images/product_1.jpg" alt="صورة أمامية">
+                <img data-target="#carousel-product-images" data-slide-to="1" src="images/product_2.jpg" alt="صورة خلفية">
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@
               <div class="col-xs-6">
                 <div class="brand">
                   <span>الماركة:</span>
-                  <img src="images/adidas_small.png">
+                  <img src="images/adidas_small.png" alt="Adidas">
                 </div>
               </div>
               <div class="col-xs-6">
@@ -155,25 +155,25 @@
                 المقاسات المتاحة:<br>
                 <span class="product-option active">
                   <label for="size_small">
-                    <input id="size_small" type="radio", name="size" value="s" hidden checked>
+                    <input id="size_small" type="radio" name="size" value="s" hidden checked>
                     S
                   </label>
                 </span>
                 <span class="product-option">
                   <label for="size_medium">
-                    <input id="size_medium" type="radio", name="size" value="m" hidden>
+                    <input id="size_medium" type="radio" name="size" value="m" hidden>
                     M
                   </label>
                 </span>
                 <span class="product-option">
                   <label for="size_large">
-                    <input id="size_large" type="radio", name="size" value="l" hidden>
+                    <input id="size_large" type="radio" name="size" value="l" hidden>
                     L
                   </label>
                 </span>
                 <span class="product-option">
                   <label for="size_xlarge">
-                    <input id="size_xlarge" type="radio", name="size" value="xl" hidden>
+                    <input id="size_xlarge" type="radio" name="size" value="xl" hidden>
                     XL
                   </label>
                 </span>
@@ -181,16 +181,16 @@
               <div id="color-selection" class="col-sm-6 product-selection">
                 الألوان المتاحة:<br>
                 <span class="product-option active" style="background-color: #FFAF32">
-                  <input type="radio", name="color" value="orange" checked>
+                  <input type="radio" name="color" value="orange" checked>
                 </span>
                 <span class="product-option" style="background-color: #FF322C">
-                  <input type="radio", name="color" value="red">
+                  <input type="radio" name="color" value="red">
                 </span>
                 <span class="product-option" style="background-color: #AC38B6">
-                  <input type="radio", name="color" value="purple">
+                  <input type="radio" name="color" value="purple">
                 </span>
                 <span class="product-option" style="background-color: #00C1CE">
-                  <input type="radio", name="color" value="blue">
+                  <input type="radio" name="color" value="blue">
                 </span>
               </div>
             </div>
@@ -205,7 +205,7 @@
               </div>
             </div>
             <div class="row">
-              <button type="submit" class="btn btn-primary custom-btn custom-btn-primary2 btn-lg">
+              <button type="submit" class="btn btn-primary custom-btn custom-btn-primary2 btn-lg custom-btn-with-icon">
                 <span class="pull-left">
                   إضافة لعربة الشراء
                 </span>
@@ -231,7 +231,7 @@
           <h3 class="custom-heading heading-inline">التعليقات على المنتج</h3>
           <div class="product-review media">
             <div class="media-left">
-              <img src="images/reviewer_1.jpg" class="media-object">
+              <img src="images/reviewer_1.jpg" class="media-object" alt="محمد هاني">
             </div>
             <div class="media-body">
               <h4 class="media-heading">
@@ -245,13 +245,13 @@
                 <span class="fa fa-star"></span>
               </div>
               <span class="product-review-text">
-                منتج جيد جدًّا أنصح بشرائه مصنوع من أقمشة عالية الجودة
+                منتج جيد جدا أنصح بشرائه مصنوع من أقمشة عالية الجودة
               </span>
             </div>
           </div>
           <div class="product-review media">
             <div class="media-left">
-              <img src="images/reviewer_2.jpg" class="media-object">
+              <img src="images/reviewer_2.jpg" class="media-object" alt="منى محمود">
             </div>
             <div class="media-body">
               <h4 class="media-heading">
@@ -272,7 +272,7 @@
         </div>
         <div class="row" id="row-suggestions">
           <h3>اقترحنا لك</h3>
-          <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="col-xs-12 col-sm-4 col-md-3">
             <div class="product-thumbnail thumbnail">
               <div class="overlay hidden-xs hidden-sm">
                 <button class="btn btn-default custom-btn custom-btn-default">
@@ -302,7 +302,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="col-xs-12 col-sm-4 col-md-3">
             <div class="product-thumbnail thumbnail">
               <div class="overlay hidden-xs hidden-sm">
                 <button class="btn btn-default custom-btn custom-btn-default">
@@ -332,7 +332,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="col-xs-12 col-sm-4 col-md-3">
             <div class="product-thumbnail thumbnail">
               <div class="overlay">
                 <button class="btn btn-default custom-btn custom-btn-default">
@@ -363,7 +363,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 hidden-sm">
+          <div class="col-xs-12 col-sm-3 col-md-3 hidden-sm">
             <div class="product-thumbnail thumbnail">
               <div class="overlay">
                 <button class="btn btn-default custom-btn custom-btn-default">

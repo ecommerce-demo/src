@@ -39,4 +39,9 @@ $(document).ready(function() {
     $(this).parents('tr').remove();
     recalculateTotal();
   });
+
+  $('.product-thumbnail .btn').click(function(e) {
+    e.stopPropagation();
+    alert('أضيف المنتج لعربة الشراء');
+  });
 });
