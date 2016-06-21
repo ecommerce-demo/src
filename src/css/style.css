@@ -6,7 +6,7 @@
   padding-bottom: 15px;
 }
 
-.custom-form-control {
+.custom-form-control, .custom-btn {
   color: #868686;
   border: 1px solid #EBEBEB;
   box-shadow: none;
