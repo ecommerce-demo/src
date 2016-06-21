@@ -377,8 +377,7 @@ body {
 }
 
 .product-thumbnail img {
-  max-height: 250px;
-  min-height: 250px;
+  height: 250px;
   background: #FAFAFA;
 }
 
@@ -762,6 +761,55 @@ h1, h2 {
   text-align: left;
 }
 
+.custom-pagination > li > a {
+  color: #C2C2C2;
+  border-radius: 0px;
+  border: 1px solid #EBEBEB;
+  margin-left: 2px;
+  margin-right: 2px;
+  transition-property: color, border-color;
+  transition-delay: 0.1s;
+}
+
+.custom-pagination > li > a:focus,
+.custom-pagination > li > a:active,
+.custom-pagination > li > a:hover {
+  color: #AB7731;
+  border-radius: 0px;
+  border: 1px solid #AB7731;
+}
+
+.custom-pagination > li > a,
+.custom-pagination > li:first-child > a,
+.custom-pagination > li:last-child > a
+ {
+  border-radius: 0px;
+  margin-right: 3px;
+  margin-left: 3px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+}
+
+.custom-pagination > li.active > a {
+  background-color: #F8AD47;
+  color: white;
+  border-color: #F8AD47;
+}
+
+.custom-pagination > li.active > a:active,
+.custom-pagination > li.active > a:hover,
+.custom-pagination > li.active > a:focus {
+  background-color: #AB7731;
+  color: white;
+  border-color: #AB7731;
+}
+
+#category-navigation {
+  display: flex;
+  justify-content: center;
+}
+
 /* الشاشة صغيرة جدًا */
 @media (max-width: 767px) {
   #store-features {
@@ -808,6 +856,12 @@ h1, h2 {
 
 /* الشاشة صغيرة جدًّا أو صغيرة */
 @media (max-width: 991px) {
+  .ui-slider .ui-slider-handle.ui-state-default {
+    height: 20px;
+    width: 20px;
+    top: -10px;
+  }
+
   #footer-nav {
     background-image: url("../images/bg_footer_1.png");
   }
