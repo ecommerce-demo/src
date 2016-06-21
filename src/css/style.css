@@ -26,3 +26,12 @@
   padding-right: 20px;
   font-weight: bold
 }
+
+.custom-btn-primary:hover,
+.custom-btn-primary:focus,
+.custom-btn-primary:active,
+.custom-btn-primary:active:hover,
+.custom-btn-primary:active:focus {
+  background-color: #C2101E;
+  border-color: #C2101E;
+}
