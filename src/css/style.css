@@ -35,3 +35,12 @@
   background-color: #C2101E;
   border-color: #C2101E;
 }
+
+.custom-dropdown-menu {
+  box-shadow: 0 2px 5px 0 #EBEBEB;
+  border-radius: 2px;
+}
+
+.custom-dropdown-menu .checkbox {
+  margin: 0 5px;
+}
