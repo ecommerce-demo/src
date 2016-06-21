@@ -1,3 +1,9 @@
+@import "./jf-flat.css";
+
+body {
+  font-family: "JF Flat Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .custom-navbar {
   background-color: white;
   border: none;
