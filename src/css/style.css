@@ -15,6 +15,12 @@
   transition-duration: 0.1s;
 }
 
+.custom-btn:focus,
+.custom-btn:active,
+.custom-btn:active:focus {
+  outline: none;
+}
+
 .custom-form-control:focus {
   border-color: #C2101E;
   box-shadow: 0 0 2px 0 #C2101E;
