@@ -12,3 +12,17 @@
   box-shadow: none;
   border-radius: 2px;
 }
+
+.custom-form-control:focus {
+  border-color: #C2101E;
+  box-shadow: 0 0 2px 0 #C2101E;
+}
+
+.custom-btn-primary {
+  background-color: #FF3956;
+  border-color: #FF3956;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold
+}
