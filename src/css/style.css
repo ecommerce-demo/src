@@ -325,7 +325,7 @@ body {
 .price {
   color: #53CCD7;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -344,7 +344,7 @@ body {
 .overlay {
   position: absolute;
   width: calc(100% - 40px);
-  height: calc(100% - 140px); 
+  height: calc(100% - 130px); 
   background-color: rgba(83, 204, 215, 0.7);
   display: flex;
   align-items: center;
@@ -366,9 +366,8 @@ body {
   margin-top: 15px;
 }
 
-.product-thumbnail h4,
-.product-thumbnail .price {
-  font-size: 100%;
+.product-thumbnail h4 {
+  font-size: 120%;
 }
 
 .product-thumbnail:hover {
@@ -379,6 +378,7 @@ body {
 
 .product-thumbnail img {
   max-height: 250px;
+  min-height: 250px;
   background: #FAFAFA;
 }
 
