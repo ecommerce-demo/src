@@ -461,7 +461,7 @@ body {
   background-color: #DCEEFA;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 #brands img {
@@ -469,6 +469,8 @@ body {
   margin-right: 25px;
   max-width: 100px;
   max-height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #footer-nav {
