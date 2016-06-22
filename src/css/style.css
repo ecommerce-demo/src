@@ -10,6 +10,7 @@ body {
   border-bottom: 3px solid #EEF0EA;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .custom-form-control, .custom-btn {
