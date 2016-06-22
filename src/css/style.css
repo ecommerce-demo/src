@@ -58,3 +58,8 @@ body {
 .custom-dropdown-menu .checkbox {
   margin: 0 5px;
 }
+
+.custom-dropdown-menu > li > a:hover,
+.custom-dropdown-menu > li > a:focus {
+  background-color: #FFE7EA;
+}
