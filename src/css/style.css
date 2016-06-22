@@ -81,3 +81,9 @@ body {
   margin-left: 10px;
   margin-right: 15px;
 }
+
+#carousel-featured {
+  background-color: #F7F8F3;
+  height: 400px;
+  padding-top: 25px;
+}
