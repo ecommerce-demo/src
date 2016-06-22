@@ -119,4 +119,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotate(-25deg);
+  flex-direction: column;
+  line-height: 90%;
+}
+
+.sale.large::after {
+  content: 'خصم';
+  font-size: 75%;
 }
