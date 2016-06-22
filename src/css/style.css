@@ -115,4 +115,8 @@ body {
   width: 60px;
   padding: 35px;
   font-size: 130%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
