@@ -99,6 +99,7 @@ body {
   padding: 20px;
   position: relative;
   top: 50px;
+  height: 200px;
 }
 
 .sale {
@@ -178,4 +179,9 @@ body {
 .custom-carousel-indicators img.active {
   height: 75px;
   width: 75px;
+}
+
+.custom-carousel-indicators {
+  top: 235px;
+  right: 68%;
 }
