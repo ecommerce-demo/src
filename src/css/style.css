@@ -197,3 +197,11 @@ body {
   position: absolute;
   top: calc(50% - 20px);
 }
+
+.custom-carousel-control.left > i {
+  right: 25%;
+}
+
+.custom-carousel-control.right > i {
+  left: 25%;
+}
