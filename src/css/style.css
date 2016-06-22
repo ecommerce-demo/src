@@ -192,3 +192,8 @@ body {
   color: #868686;
   text-shadow: none;
 }
+
+.custom-carousel-control > i {
+  position: absolute;
+  top: 50%;
+}
