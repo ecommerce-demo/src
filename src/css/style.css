@@ -33,7 +33,7 @@ body {
   box-shadow: 0 0 2px 0 #C2101E;
 }
 
-.custom-btn-primary {
+.custom-navbar .custom-btn-primary {
   background-color: #FF3956;
   border-color: #FF3956;
   color: white;
@@ -42,13 +42,14 @@ body {
   font-weight: bold
 }
 
-.custom-btn-primary:hover,
-.custom-btn-primary:focus,
-.custom-btn-primary:active,
-.custom-btn-primary:active:hover,
-.custom-btn-primary:active:focus {
+.custom-navbar .custom-btn-primary:hover,
+.custom-navbar .custom-btn-primary:focus,
+.custom-navbar .custom-btn-primary:active,
+.custom-navbar .custom-btn-primary:active:hover,
+.custom-navbar .custom-btn-primary:active:focus {
   background-color: #C2101E;
   border-color: #C2101E;
+  color: white;  
 }
 
 .custom-dropdown-menu {
@@ -141,4 +142,20 @@ body {
 #carousel-featured .product-details h1 {
   font-weight: bold;
   font-size: 175%;
+}
+
+.custom-btn-primary {
+  background-color: transparent;
+  color: #F8AD47;
+  border-color: #F8AD47;
+}
+
+.custom-btn-primary:hover,
+.custom-btn-primary:focus,
+.custom-btn-primary:active,
+.custom-btn-primary:active:hover,
+.custom-btn-primary:active:focus {
+  color: #AB7731;
+  border-color: #AB7731;
+  background-color: transparent;
 }
