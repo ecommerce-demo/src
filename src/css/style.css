@@ -159,3 +159,8 @@ body {
   border-color: #AB7731;
   background-color: transparent;
 }
+
+#carousel-featured .product-details .custom-btn-primary {
+  padding: 10px 25px;
+  margin-top: 15px;
+}
