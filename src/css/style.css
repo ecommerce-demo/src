@@ -68,3 +68,10 @@ body {
 .custom-dropdown-menu > li > a:focus {
   background-color: #FFE7EA;
 }
+
+.custom-navbar .navbar-nav .active > a {
+  background-color: transparent;
+  color: #FF3956;
+  font-weight: bold;
+  border-bottom: 1px solid #FF3956;
+}
