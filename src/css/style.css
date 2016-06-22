@@ -96,4 +96,23 @@ body {
 #carousel-featured .product-details {
   border: 1px solid #DDDDDB;
   padding: 20px;
+  position: relative;
+  top: 50px;
+}
+
+.sale {
+  background-color: #53CCD7;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+}
+
+.sale.large {
+  height: 60px;
+  width: 60px;
+  padding: 35px;
+  font-size: 130%;
 }
