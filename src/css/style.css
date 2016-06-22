@@ -18,7 +18,7 @@ body {
   box-shadow: none;
   border-radius: 2px;
   transition-property: border-color, background-color;
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
 }
 
 .custom-btn:focus,
@@ -57,6 +57,11 @@ body {
 
 .custom-dropdown-menu .checkbox {
   margin: 0 5px;
+}
+
+.custom-dropdown-menu > li > a {
+  transition-property: background-color;
+  transition-duration: 0.2s;
 }
 
 .custom-dropdown-menu > li > a:hover,
