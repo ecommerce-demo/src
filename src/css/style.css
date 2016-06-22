@@ -92,3 +92,8 @@ body {
 #carousel-featured .item img {
   height: 375px;
 }
+
+#carousel-featured .product-details {
+  border: 1px solid #DDDDDB;
+  padding: 20px;
+}
