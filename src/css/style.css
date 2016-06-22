@@ -88,3 +88,7 @@ body {
   height: 400px;
   padding-top: 25px;
 }
+
+#carousel-featured .item img {
+  height: 375px;
+}
