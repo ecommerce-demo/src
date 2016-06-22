@@ -185,3 +185,10 @@ body {
   top: 235px;
   right: 68%;
 }
+
+.custom-carousel-control.right,
+.custom-carousel-control.left {
+  background: transparent;
+  color: #868686;
+  text-shadow: none;
+}
