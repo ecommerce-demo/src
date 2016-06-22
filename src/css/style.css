@@ -205,3 +205,7 @@ body {
 .custom-carousel-control.right > i {
   left: 25%;
 }
+
+#store-features {
+  box-shadow: 0 0 15px #EEF0EA;
+}
