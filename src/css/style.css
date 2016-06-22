@@ -75,3 +75,7 @@ body {
   font-weight: bold;
   border-bottom: 1px solid #FF3956;
 }
+
+#btn-shopping-cart {
+  padding: 5px 10px;
+}
