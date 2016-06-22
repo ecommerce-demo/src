@@ -164,3 +164,10 @@ body {
   padding: 10px 25px;
   margin-top: 15px;
 }
+
+.custom-carousel-indicators img {
+  height: 75px;
+  width: 75px;
+  border: 2px solid #DDDDDB;
+  background-color: white;
+}
