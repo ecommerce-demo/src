@@ -137,3 +137,8 @@ body {
   right: -10px;
   background-color: #F7F8F3;
 }
+
+#carousel-featured .product-details h1 {
+  font-weight: bold;
+  font-size: 175%;
+}
