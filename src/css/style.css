@@ -233,6 +233,10 @@ body {
   padding: 8px;
 }
 
+.custom-thumbnail img {
+  height: 250px;
+}
+
 .price {
   color: #53CCD7;
   margin: 10px 0;
