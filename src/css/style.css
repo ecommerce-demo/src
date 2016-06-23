@@ -227,3 +227,8 @@ body {
   height: 40px;
   margin-bottom: 10px;
 }
+
+.custom-thumbnail {
+  border: 2px solid #EEF0EA;
+  padding: 8px;
+}
