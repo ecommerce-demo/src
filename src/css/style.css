@@ -317,3 +317,14 @@ body {
 .custom-heading {
   margin-bottom: 25px;
 }
+
+.custom-panel {
+  border: 4px solid #EEF0EA;
+  border-radius: 2px;
+  box-shadow: none;
+  padding: 5px;
+}
+
+.custom-panel img {
+  width: 100%;
+}
