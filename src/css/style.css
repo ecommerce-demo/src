@@ -218,3 +218,7 @@ body {
 #store-features > div {
   border-right: 1px solid #EEF0EA;
 }
+
+#store-features > #first-feature {
+  border-right: none;
+}
