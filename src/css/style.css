@@ -329,3 +329,13 @@ body {
   width: 100%;
   margin-bottom: 8px;
 }
+
+.custom-panel h4, .custom-panel .price {
+  font-size: 130%;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.custom-text-muted {
+  color: #A9A9A9;
+}
