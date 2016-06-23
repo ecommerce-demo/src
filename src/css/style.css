@@ -255,4 +255,12 @@ body {
   background-color: rgba(83, 204, 215, 0.5);
   height: 250px;
   width: calc(100% - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay .custom-btn {
+  color: #53CCD7;
+  font-weight: bold;
 }
