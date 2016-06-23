@@ -111,6 +111,7 @@ body {
   left: 25px;
   top: 16px;
   direction: ltr;
+  z-index: 1;
 }
 
 .sale::before {
@@ -311,4 +312,8 @@ body {
   height: 13px;
   width: 13px;
   margin: 2px;
+}
+
+.custom-heading {
+  margin-bottom: 25px;
 }
