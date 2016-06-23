@@ -222,3 +222,8 @@ body {
 #store-features > .feature + .feature {
   border-right: 1px solid #EEF0EA;
 }
+
+#store-features .feature > img {
+  height: 40px;
+  margin-bottom: 10px;
+}
