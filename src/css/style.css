@@ -214,3 +214,7 @@ body {
   top: -30px;
   background-color: white;
 }
+
+#store-features > div {
+  border-right: 1px solid #EEF0EA;
+}
