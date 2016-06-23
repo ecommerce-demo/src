@@ -259,6 +259,8 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.3s;
 }
 
 .overlay:hover {
