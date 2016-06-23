@@ -210,4 +210,7 @@ body {
   box-shadow: 0 0 15px #EEF0EA;
   padding-bottom: 35px;
   padding-top: 5px;
+  position: relative;
+  top: -30px;
+  background-color: white;
 }
