@@ -177,22 +177,22 @@ body {
   margin-top: 15px;
 }
 
-.custom-carousel-indicators img {
+.custom-carousel-indicators-primary img {
   border: 2px solid #DDDDDB;
   background-color: white;
 }
 
-.custom-carousel-indicators img.active {
+.custom-carousel-indicators-primary img.active {
   border-color: #F8AD47;
 }
 
-.custom-carousel-indicators img,
-.custom-carousel-indicators img.active {
+.custom-carousel-indicators-primary img,
+.custom-carousel-indicators-primary img.active {
   height: 75px;
   width: 75px;
 }
 
-.custom-carousel-indicators {
+#carousel-featured .custom-carousel-indicators-primary {
   top: 235px;
   right: 68%;
 }
@@ -288,4 +288,20 @@ body {
 .overlay .custom-btn {
   color: #53CCD7;
   font-weight: bold;
+}
+
+.custom-carousel-indicators {
+  position: static;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.custom-carousel-indicators > li {
+  background-color: #C2C2C2;
+  border-radius: 0;
+}
+
+.custom-carousel-indicators > li.active {
+  background-color: #565656;;
 }
