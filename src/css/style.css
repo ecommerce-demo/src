@@ -108,8 +108,13 @@ body {
   font-weight: bold;
   padding: 5px 10px;
   position: absolute;
-  left: -15px;
-  top: -15px;
+  left: 25px;
+  top: 16px;
+  direction: ltr;
+}
+
+.sale::before {
+  content: '-';
 }
 
 .sale.large {
@@ -124,11 +129,17 @@ body {
   transform: rotate(-25deg);
   flex-direction: column;
   line-height: 90%;
+  left: -15px;
+  top: -15px;
 }
 
 .sale.large::after {
   content: 'خصم';
   font-size: 75%;
+}
+
+.sale.large::before {
+  content: none;
 }
 
 #carousel-featured .product-details .product-category {
