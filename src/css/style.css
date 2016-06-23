@@ -231,6 +231,11 @@ body {
 .custom-thumbnail {
   border: 2px solid #EEF0EA;
   padding: 8px;
+  cursor: pointer;
+}
+
+.custom-thumbnail:hover {
+  border-color: #53CCD7;
 }
 
 .custom-thumbnail img {
