@@ -305,3 +305,10 @@ body {
 .custom-carousel-indicators > li.active {
   background-color: #565656;;
 }
+
+.custom-carousel-indicators > li,
+.custom-carousel-indicators > li.active {
+  height: 13px;
+  width: 13px;
+  margin: 2px;
+}
