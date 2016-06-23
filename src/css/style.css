@@ -215,6 +215,6 @@ body {
   background-color: white;
 }
 
-#store-features > div:not(:first-of-type) {
+#store-features > .feature + .feature {
   border-right: 1px solid #EEF0EA;
 }
