@@ -232,6 +232,8 @@ body {
   border: 2px solid #EEF0EA;
   padding: 8px;
   cursor: pointer;
+  margin-right: -8px;
+  margin-left: -8px;
 }
 
 .custom-thumbnail:hover {
@@ -259,7 +261,7 @@ body {
   position: absolute;
   background-color: rgba(83, 204, 215, 0.5);
   height: 250px;
-  width: calc(100% - 50px);
+  width: calc(100% - 36px);
   display: flex;
   justify-content: center;
   align-items: center;
