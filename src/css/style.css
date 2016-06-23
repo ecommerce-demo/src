@@ -213,6 +213,10 @@ body {
   position: relative;
   top: -30px;
   background-color: white;
+  background-image: url("../images/bg_features.png");
+  background-repeat: no-repeat;
+  background-size: auto 60%;
+  background-position: -10px -20px;
 }
 
 #store-features > .feature + .feature {
