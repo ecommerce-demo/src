@@ -215,10 +215,6 @@ body {
   background-color: white;
 }
 
-#store-features > div {
+#store-features > div:not(:first-of-type) {
   border-right: 1px solid #EEF0EA;
-}
-
-#store-features > div:first-of-type {
-  border-right: none;
 }
