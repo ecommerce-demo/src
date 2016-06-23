@@ -258,6 +258,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
 }
 
 .overlay .custom-btn {
