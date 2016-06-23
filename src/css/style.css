@@ -232,3 +232,8 @@ body {
   border: 2px solid #EEF0EA;
   padding: 8px;
 }
+
+.price {
+  color: #53CCD7;
+  margin: 10px 0;
+}
