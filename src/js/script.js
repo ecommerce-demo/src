@@ -5,7 +5,8 @@ $(document).ready(function() {
     window.location = 'product.html';
   });
 
-  $('[data-add-to-cart]').click(function() {
+  $('[data-add-to-cart]').click(function(e) {
     alert('أضيف المُنتج إلى عربة الشراء');
+    e.stopPropagation();
   });
 })
