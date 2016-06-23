@@ -249,3 +249,10 @@ body {
 .rating .active {
   color: #F8AD47;
 }
+
+.overlay {
+  position: absolute;
+  background-color: rgba(83, 204, 215, 0.5);
+  height: 250px;
+  width: calc(100% - 50px);
+}
