@@ -237,3 +237,11 @@ body {
   color: #53CCD7;
   margin: 10px 0;
 }
+
+.rating {
+  color: #C2C2C2;
+}
+
+.rating .active {
+  color: #F8AD47;
+}
