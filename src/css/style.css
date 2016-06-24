@@ -344,3 +344,18 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.brand-nav {
+  margin-top: 10px;
+}
+
+.brand-nav .brand-text {
+  margin-left: 3px;
+  display: inline-block;
+}
+
+.brand-nav .pull-left {
+  height: 31px;
+  display: flex;
+  align-items: center;
+}
