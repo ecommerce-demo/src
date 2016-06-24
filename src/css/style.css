@@ -359,3 +359,8 @@ body {
   display: flex;
   align-items: center;
 }
+
+.custom-panel .carousel {
+  margin-right: -15px;
+  margin-left: -15px;
+}
