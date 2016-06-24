@@ -371,3 +371,16 @@ body {
   margin-left: 15px;
   padding-top: 25px;
 }
+
+#brand-logos {
+  background-color: #DCEEFA;
+  padding-top: 25px;
+  padding: 25px 0;
+}
+
+#brand-logos img {
+  margin-left: 25px;
+  margin-right: 25px;
+  max-height: 100px;
+  max-width: 100px;
+}
