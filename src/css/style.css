@@ -440,3 +440,22 @@ body {
   background-color: #303030;
   border: none;
 }
+
+
+#footer-copyright-social {
+  background-color: #151515;
+  color: #303030;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+#footer-copyright-social a {
+  color: #303030;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#footer-copyright-social a:hover {
+  text-decoration: none;
+}
