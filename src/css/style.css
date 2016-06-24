@@ -384,3 +384,20 @@ body {
   max-height: 100px;
   max-width: 100px;
 }
+
+#footer-nav {
+  background-color: #1F1F1F;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+#footer-nav-links a {
+  color: #575757;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+#footer-nav > .container > div {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
