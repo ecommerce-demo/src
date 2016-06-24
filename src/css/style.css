@@ -325,7 +325,7 @@ body {
   padding: 5px;
 }
 
-.custom-panel img {
+.custom-panel .product-image {
   width: 100%;
   margin-bottom: 8px;
 }
@@ -338,4 +338,9 @@ body {
 
 .custom-text-muted {
   color: #A9A9A9;
+}
+
+.custom-panel .product-details {
+  display: flex;
+  flex-direction: column;
 }
