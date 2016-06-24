@@ -411,6 +411,9 @@ body {
   padding-top: 35px;
   padding-bottom: 25px;
   color: #575757;
+  background-image: url("../images/bg_footer_1.png"), url("../images/bg_footer_2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 110% 0%, -10% -150%;
 }
 
 #footer-nav-links a {
