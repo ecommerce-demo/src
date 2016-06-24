@@ -29,6 +29,11 @@ body {
 }
 
 .custom-form-control:focus {
+  border-color: #AB7731;
+  box-shadow: 0 0 2px 0 #AB7731;
+}
+
+.custom-navbar .custom-form-control:focus {
   border-color: #C2101E;
   box-shadow: 0 0 2px 0 #C2101E;
 }
@@ -171,6 +176,22 @@ body {
   color: #AB7731;
   border-color: #AB7731;
   background-color: transparent;
+}
+
+.custom-btn-primary2 {
+  color: white;
+  background-color: #F8AD47;
+  border-color: #F8AD47;
+}
+
+.custom-btn-primary2:hover,
+.custom-btn-primary2:focus,
+.custom-btn-primary2:active,
+.custom-btn-primary2:active:hover,
+.custom-btn-primary2:active:focus,
+.custom-btn-primary2:hover:disabled {
+  border-color: #AB7731;
+  background-color: #AB7731;
 }
 
 #carousel-featured .product-details .custom-btn-primary {
@@ -389,10 +410,11 @@ body {
   background-color: #1F1F1F;
   padding-top: 35px;
   padding-bottom: 25px;
+  color: #575757;
 }
 
 #footer-nav-links a {
-  color: #575757;
+  color: inherit;
   font-weight: bold;
   margin-left: 30px;
 }
@@ -400,4 +422,18 @@ body {
 #footer-nav > .container > div {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+#footer-nav form {
+  border-top: 1px solid #292929;
+  padding-top: 25px;
+}
+
+#footer-nav button {
+  color: inherit;
+}
+
+#footer-nav form input {
+  background-color: #303030;
+  border: none;
 }
