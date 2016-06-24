@@ -422,6 +422,18 @@ body {
   margin-left: 30px;
 }
 
+#footer-nav-links a,
+#footer-copyright-social a {
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+#footer-nav-links a:hover,
+#footer-copyright-social a:hover {
+  text-decoration: none;
+  color: #A9A9A9;
+}
+
 #footer-nav > .container > div {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -439,8 +451,12 @@ body {
 #footer-nav form input {
   background-color: #303030;
   border: none;
+  opacity: 0.6;
 }
 
+#footer-nav form label {
+  margin-bottom: 15px;
+}
 
 #footer-copyright-social {
   background-color: #151515;
@@ -454,8 +470,4 @@ body {
   color: #303030;
   margin-left: 5px;
   margin-right: 5px;
-}
-
-#footer-copyright-social a:hover {
-  text-decoration: none;
 }
