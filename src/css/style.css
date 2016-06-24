@@ -364,3 +364,10 @@ body {
   margin-right: -15px;
   margin-left: -15px;
 }
+
+#row-brands h3 {
+  border-top: 1px solid #EEF0EA;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-top: 25px;
+}
