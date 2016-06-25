@@ -494,4 +494,8 @@ body {
     position: static;
     text-align: center;
   }
+
+  .overlay {
+    display: none;
+  }
 }
