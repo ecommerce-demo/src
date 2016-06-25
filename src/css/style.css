@@ -110,6 +110,7 @@ body {
   position: relative;
   top: 50px;
   height: 200px;
+  background-color: #F7F8F3;
 }
 
 .sale {
@@ -477,6 +478,7 @@ body {
   margin-right: 5px;
 }
 
+/* الشاشات الصغيرة جدًا فقط */
 @media (max-width: 767px) {
   #carousel-featured, #carousel-featured .product-details {
     height: auto;
@@ -529,5 +531,12 @@ body {
   #social-icons {
     font-size: 150%;
     margin-top: 10px;
+  }
+}
+
+/* الشاشات الصغيرة فقط، وليست الصّغيرة جدًّا */
+@media (min-width: 768px) and (max-width: 991px) {
+  #carousel-featured .custom-carousel-indicators-primary {
+    right: 65%;
   }
 }
