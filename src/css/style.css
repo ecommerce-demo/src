@@ -517,7 +517,17 @@ body {
     margin-bottom: 5px;
   }
 
-  #brand-logos span {
-    display: block;
+  #footer-nav {
+    background-image: url("../images/bg_footer_1.png");
+  }
+
+  #copyright, #social-icons {
+    width: 100%;
+    text-align: center;
+  }
+
+  #social-icons {
+    font-size: 150%;
+    margin-top: 10px;
   }
 }
