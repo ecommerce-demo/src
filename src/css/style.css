@@ -482,6 +482,10 @@ body {
     height: auto;
   }
 
+  #carousel-featured {
+    padding-bottom: 25px;
+  }
+
   #carousel-featured .item img {
     height: 250px;
   }
