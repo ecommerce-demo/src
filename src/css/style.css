@@ -497,10 +497,6 @@ body {
     text-align: center;
   }
 
-  .overlay {
-    display: none;
-  }
-
   .custom-thumbnail {
     margin-right: 0;
     margin-left: 0;
@@ -538,5 +534,17 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   #carousel-featured .custom-carousel-indicators-primary {
     right: 65%;
+  }
+
+  .custom-thumbnail img {
+    height: 200px;
+  }
+}
+
+
+/* الشاشات الصّغيرة والصّغيرة جدًّا */
+@media (max-width: 991px) {
+  .overlay {
+    display: none;
   }
 }
