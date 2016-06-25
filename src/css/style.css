@@ -488,6 +488,32 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   margin-right: 5px;
 }
 
+.custom-breadcrumb {
+  background-color: transparent;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.custom-breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.custom-breadcrumb a:hover {
+  color: #F8AD47;
+}
+
+.custom-breadcrumb .active {
+  color: #C2C2C2;
+}
+
+.custom-breadcrumb > li + li:before {
+  content: '>';
+  color: #565656;
+}
+
 /* الشاشات الصغيرة جدًا فقط */
 @media (max-width: 767px) {
   #carousel-featured, #carousel-featured .product-details {
