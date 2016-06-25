@@ -13,6 +13,11 @@ body {
   margin-bottom: 0;
 }
 
+.navbar-form {
+  margin-left: 0;
+  margin-right: 0px;
+}
+
 .custom-form-control, .custom-btn {
   color: #868686;
   border: 1px solid #EBEBEB;
