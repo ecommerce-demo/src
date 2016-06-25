@@ -514,6 +514,13 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   color: #565656;
 }
 
+/*صفحة المنتج*/
+#carousel-product-images .item img {
+  border: 1px solid #EBEBEB;
+  width: 100%;
+}
+/* نهاية صفحة المُنتج */
+
 /* الشاشات الصغيرة جدًا فقط */
 @media (max-width: 767px) {
   #carousel-featured, #carousel-featured .product-details {
