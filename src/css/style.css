@@ -503,4 +503,21 @@ body {
     margin-right: 0;
     margin-left: 0;
   }
+
+  #brand-logos .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #brand-logos img {
+    max-height: 50px;
+    max-width: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #brand-logos span {
+    display: block;
+  }
 }
