@@ -11,7 +11,7 @@ $(document).ready(function() {
   });
 
   $('.product-option input[type="radio"]').on('change', function() {
-    $('.product-option').removeClass('active');
+    $(this).parents('.product-option').siblings().removeClass('active');
     $(this).parents('.product-option').addClass('active');
   });
 })
