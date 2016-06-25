@@ -4,6 +4,16 @@ body {
   font-family: "JF Flat Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body > .container-fluid {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > .container-fluid > .row:not(:first-child):not(:last-child) {
+  flex-grow: 1;
+}
+
 .custom-navbar {
   background-color: white;
   border: none;
