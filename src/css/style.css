@@ -498,4 +498,9 @@ body {
   .overlay {
     display: none;
   }
+
+  .custom-thumbnail {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
