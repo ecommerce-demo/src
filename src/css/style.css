@@ -476,3 +476,18 @@ body {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+@media (max-width: 767px) {
+  #carousel-featured, #carousel-featured .product-details {
+    height: auto;
+  }
+
+  #carousel-featured .item img {
+    height: 250px;
+  }
+
+  #carousel-featured .product-details {
+    position: static;
+    text-align: center;
+  }
+}
