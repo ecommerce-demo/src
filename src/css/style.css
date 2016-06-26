@@ -519,6 +519,15 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   color: #565656;
 }
 
+.select-inline {
+  display: inline-block;
+  width: auto;
+}
+
+.custom-label {
+  font-weight: normal;
+}
+
 /*صفحة المنتج*/
 #carousel-product-images .item img {
   border: 1px solid #EBEBEB;
