@@ -676,4 +676,22 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
     font-size: 150%;
     margin-top: 10px;
   }
+
+  #carousel-product-images {
+    margin-bottom: 15px;
+  }
+
+  #carousel-product-images .item img {
+    width: 80%;
+    position: relative;
+    right: 10%;
+  }
+
+  .product-option {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    line-height: 50px;
+    font-size: 20px;
+  }
 }
