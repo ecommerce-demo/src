@@ -194,6 +194,22 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   background-color: transparent;
 }
 
+.custom-btn-danger {
+  color: #FF3956;
+  border-color: #FF3956;
+  background-color: transparent;
+}
+
+.custom-btn-danger:hover,
+.custom-btn-danger:focus,
+.custom-btn-danger:active,
+.custom-btn-danger:active:hover,
+.custom-btn-danger:active:focus {
+  color: #C2101E;
+  border-color: #C2101E;
+  background-color: transparent;
+}
+
 .custom-btn-primary2 {
   color: white;
   background-color: #F8AD47;
