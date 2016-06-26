@@ -577,8 +577,6 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
 
 .custom-table th {
   color: #C2C2C2;
-  border-bottom: 1px solid #EBEBEB;
-  border-top: 1px solid #EBEBEB;
   font-weight: normal;
 }
 
@@ -586,6 +584,8 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   padding: 15px;
   font-size: 120%;
   vertical-align: middle;
+  border-bottom: 1px solid #EBEBEB;
+  border-top: 1px solid #EBEBEB;
 }
 
 .custom-table th:not(:first-child), .custom-table td:not(:first-child) {
