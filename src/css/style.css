@@ -528,6 +528,20 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
 #form-product-selection h2 {
   font-weight: bold;
 }
+
+.product-option input {
+  display: none;
+}
+
+.product-option {
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  border: 1px solid #EBEBEB;
+  text-align: center;
+  line-height: 23px;
+  color: #C2C2C2;
+}
 /* نهاية صفحة المُنتج */
 
 /* الشاشات الصغيرة جدًا فقط */
