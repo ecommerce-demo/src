@@ -528,6 +528,12 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   font-weight: normal;
 }
 
+.btn-primary.custom-btn-with-icon {
+  min-width: 250px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
 /*صفحة المنتج*/
 #carousel-product-images .item img {
   border: 1px solid #EBEBEB;
