@@ -298,6 +298,11 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   margin: 10px 0;
 }
 
+.price.large {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
 .rating {
   color: #C2C2C2;
 }
@@ -518,6 +523,10 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
 #carousel-product-images .item img {
   border: 1px solid #EBEBEB;
   width: 100%;
+}
+
+#form-product-selection h2 {
+  font-weight: bold;
 }
 /* نهاية صفحة المُنتج */
 
