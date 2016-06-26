@@ -542,6 +542,12 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   line-height: 23px;
   color: #C2C2C2;
 }
+
+.product-option.active {
+  color: #F8AD47;
+  border-color: #F8AD47;
+}
+
 /* نهاية صفحة المُنتج */
 
 /* الشاشات الصغيرة جدًا فقط */
