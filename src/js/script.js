@@ -19,6 +19,28 @@ $(document).ready(function() {
     $(this).parents('[data-product-info]').remove();
   });
 
+  function calculateTotalPrice() {
+    // أنشئ متغيّرًا جديدًا لحفظ السعر الإجمالي
+    var totalPriceForAllProducts = 0;
+
+    // لكل سطر يمثل معلومات المُنتج في الصّفحة
+    $('[data-product-info]').each(function() {
+      // اجلب سعر القطعة الواحدة من الخاصّة الموافقة
+      var pricePerUnit = $(this).attr('data-product-price');
+
+      // اجلب كمية المنتج من حقل اختيار الكمية
+      var quantity = $(this).find('[data-product-quantity]').val();
+
+      var totalPriceForProduct = pricePerUnit * quantity;
+
+      // أضف السعر الإجمالي لهذا المنتج إلى السعر الإجمالي لكل المُنتجات، واحفظ القيمة في المتغير نفسه
+      totalPriceForAllProducts = totalPriceForAllProducts + (totalPriceForProduct);
+    });
+
+    // حدث السعر الإجمالي لكل المُنتجات في الصفحة
+    $('#total-price-for-all-products').text(totalPriceForAllProducts + '$');
+  }
+
   // عندما تتغير كمية المنتج
   $('[data-product-quantity]').change(function() {
     // اجلب الكمية الجديدة
@@ -35,5 +57,8 @@ $(document).ready(function() {
 
     // عين السعر الجديد ضمن خليّة السّعر الإجمالي للمنتج في هذا السطر
     $parent.find('.total-price-for-product').text(totalPriceForProduct + '$');
+
+    // حدث السعر الإجمالي لكل المُنتجات
+    calculateTotalPrice();
   });
 })
