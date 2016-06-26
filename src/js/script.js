@@ -14,4 +14,8 @@ $(document).ready(function() {
     $(this).parents('.product-option').siblings().removeClass('active');
     $(this).parents('.product-option').addClass('active');
   });
+
+  $('[data-remove-from-cart]').click(function() {
+    $(this).parents('[data-product-info]').remove();
+  });
 })
