@@ -596,6 +596,11 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   width: 50%;
 }
 
+.custom-table tfoot td {
+  border-bottom: none;
+  font-size: 150%;
+}
+
 /*صفحة المنتج*/
 #carousel-product-images .item img {
   border: 1px solid #EBEBEB;
@@ -648,6 +653,7 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
 #form-checkout button[type="submit"] {
   margin-top: 15px;
   margin-bottom: 15px;
+  margin-right: 15px;
 }
 /* نهاية صفحة الشراء */
 
