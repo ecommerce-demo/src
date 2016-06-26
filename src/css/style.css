@@ -37,6 +37,11 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   transition-duration: 0.3s;
 }
 
+.custom-input-lg {
+  border-width: 2px;
+  border-radius: 3px;
+}
+
 .custom-btn:focus,
 .custom-btn:active,
 .custom-btn:active:focus {
