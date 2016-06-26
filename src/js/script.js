@@ -41,6 +41,12 @@ $(document).ready(function() {
 
     // حدث السعر الإجمالي لكل المُنتجات في الصفحة
     $('#total-price-for-all-products').text(totalPriceForAllProducts + '$');
+
+    // إذا كان السّعر الإجمالي مساويًا للصفر
+    if (totalPriceForAllProducts === 0) {
+      // امنع إرسال النّموذج بتعطيل زرّ إرساله
+      $('#form-checkout button[type="submit"]').prop('disabled', true);
+    }
   }
 
   // عندما تتغير كمية المنتج
