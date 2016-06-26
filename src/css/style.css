@@ -543,10 +543,21 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   color: #C2C2C2;
 }
 
+.product-option label {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
 .product-option.active {
   color: #F8AD47;
   border-color: #F8AD47;
 }
+
+ .color-option.active {
+   border-color: white;
+   outline: 1px solid black;
+ }
 
 /* نهاية صفحة المُنتج */
 
