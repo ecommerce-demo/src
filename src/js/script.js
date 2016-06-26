@@ -17,6 +17,8 @@ $(document).ready(function() {
 
   $('[data-remove-from-cart]').click(function() {
     $(this).parents('[data-product-info]').remove();
+    // أعد حساب السعر الإجمالي بعد حذف أحد المُنتجات
+    calculateTotalPrice();
   });
 
   function calculateTotalPrice() {
