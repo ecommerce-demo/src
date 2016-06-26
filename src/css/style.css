@@ -644,6 +644,13 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
 
 /* نهاية صفحة المُنتج */
 
+/* صفحة الشراء */
+#form-checkout button[type="submit"] {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* نهاية صفحة الشراء */
+
 /* الشاشات الصغيرة جدًا فقط */
 @media (max-width: 767px) {
   #carousel-featured, #carousel-featured .product-details {

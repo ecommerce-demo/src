@@ -108,7 +108,7 @@
             <!--قسم عربة الشراء-->
             <div class="row">
               <h1>عربة الشراء</h1>
-              <form action="payment.html">
+              <form id="form-checkout" action="payment.html">
                 <table class="custom-table">
                   <thead>
                     <tr>
@@ -188,11 +188,24 @@
                   <tfoot>
                     <tr>
                       <td colspan="5">
-                         
+                         <span class="text-muted custom-text-muted">
+                           السعر الإجمالي للمنتجات:
+                          </span>
+                          1500 دولار
                       </td>
                     </tr>
                   </tfoot>
                 </table>
+                <button type="submit" class="btn custom-btn btn-primary custom-btn-primary2 custom-btn-with-icon btn-lg">
+                  <span class="clearfix">
+                    <span class="pull-left">
+                      إكمال عمليّة الشّراء
+                    </span>
+                    <span class="pull-right">
+                      <i class="fa fa-dollar fa-lg"></i>
+                    </span>
+                  </span>
+                </button>
               </form>
             </div><!--نهاية قسم عربة الشراء-->
 
