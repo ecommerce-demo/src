@@ -126,5 +126,8 @@ $(document).ready(function() {
       // وإلا ففعلّها
       $('#credit-card-info input').prop('disabled', false);
     }
+
+    // بدل معلومات بطاقة الائتمان بين الظهور والإخفاء
+    $('#credit-card-info').toggle();
   });
 })
