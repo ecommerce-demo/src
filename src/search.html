@@ -218,7 +218,8 @@
                 <div class="panel panel-default custom-panel">
                   <div class="panel-heading">تصفية بالسعر</div>
                   <div class="panel-body">
-                    بين 250$ و850$
+                    بين 250$ و800$<br>
+                    <div id="price-range"></div>
                   </div>
                 </div>
               </div><!--نهاية التصفية حسب السعر-->
@@ -309,5 +310,15 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#price-range').slider({
+          range: true,
+          min: 50,
+          max: 1000,
+          values: [250, 800]
+        });
+      });
+    </script>
   </body>
 </html>
