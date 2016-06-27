@@ -573,6 +573,45 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   color: #565656;
 }
 
+.custom-pagination > li > a {
+  color: #C2C2C2;
+  border: 1px solid #EBEBEB;
+  width: 32px;
+  height: 32px;
+  margin-right: 3px;
+  margin-left: 3px;
+  transition-property: color, border-color;
+  transition-duration: 0.3s;
+}
+
+.custom-pagination > li:first-child > a,
+.custom-pagination > li:last-child > a
+ {
+  border-radius: 0px;
+}
+
+
+.custom-pagination > li > a:focus,
+.custom-pagination > li > a:active,
+.custom-pagination > li > a:hover {
+  color: #AB7731;
+  border-color: #AB7731;
+}
+
+.custom-pagination > li.active > a {
+  background-color: #F8AD47;
+  color: white;
+  border-color: #F8AD47;
+}
+
+.custom-pagination > li.active > a:active,
+.custom-pagination > li.active > a:hover,
+.custom-pagination > li.active > a:focus {
+  background-color: #AB7731;
+  color: white;
+  border-color: #AB7731;
+}
+
 .select-inline {
   display: inline-block;
   width: auto;
