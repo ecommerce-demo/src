@@ -113,4 +113,18 @@ $(document).ready(function() {
       $('#form-checkout select[name="city"]').append($newOption);
     });
   });
+
+  // عندما تتغير طريقة الدفع
+  $('#form-checkout input[name="payment_method"]').on('change', function() {
+    // اجلب القيمة المُختارة حاليًا
+    var paymentMethod = $(this).val(); 
+
+    if (paymentMethod === 'on_delivery') {
+      // إذا كانت عند الاستلام، فعطّل حقول بطاقة الائتمان
+      $('#credit-card-info input').prop('disabled', true);
+    } else {
+      // وإلا ففعلّها
+      $('#credit-card-info input').prop('disabled', false);
+    }
+  });
 })
