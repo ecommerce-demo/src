@@ -706,6 +706,11 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
+#search-pagination {
+  width: 100%;
+  text-align: center;
+}
 /* نهاية صفحة البحث المتقدم */
 
 /* صفحة الشراء */
