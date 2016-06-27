@@ -14,6 +14,30 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   flex-grow: 1;
 }
 
+/* تخصيص مكون slider */
+.ui-slider {
+  background: #EBEBEB;
+  border: none;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* المقبضان */
+.ui-slider .ui-slider-handle {
+  background-color: #F8AD47;
+  border: none;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}/* نهاية المقبضين */
+
+/* الشريط بين المقبضين */
+.ui-slider .ui-slider-range {
+  background: #F8AD47;
+}/* الشريط بين المقبضين */
+/* نهاية تخصيص مكوّن slider */
+
 .custom-navbar {
   background-color: white;
   border: none;
