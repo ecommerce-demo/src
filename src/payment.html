@@ -108,6 +108,37 @@
           <!--نموذج الدفع-->
           <div class="row">
             <form id="form-checkout" action="payment.html">
+              <!--البيانات الشخصية-->
+              <div class="col-xs-12 col-md-6">
+                <h3 class="custom-heading">بياناتك الشخصية</h3>
+                <div class="col-sm-6 form-group">
+                  <input type="text" class="form-control custom-form-control input-lg custom-input-lg" placeholder="الاسم الأول" name="first_name" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input type="text" class="form-control custom-form-control input-lg custom-input-lg" placeholder="الاسم الأخير" name="last_name" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input type="email" class="form-control custom-form-control input-lg custom-input-lg" placeholder="البريد الإلكتروني" name="email" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input type="text" class="form-control custom-form-control input-lg custom-input-lg" placeholder="المنطقة" name="area" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <select class="form-control custom-form-control input-lg custom-input-lg" name="country" required>
+                    <option disabled selected value="">اختر الدولة</option>
+                    <option value="sa">السعودية</option>
+                    <option value="eg">مصر</option>
+                    <option value="jo">الأردن</option>
+                    <option value="sy">سوريا</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-6">
+                  <select class="form-control custom-form-control input-lg custom-input-lg" name="city" required>
+                    <option disabled selected value="">اختر المدينة</option>
+                  </select>
+                </div>
+              </div><!--نهاية البيانات الشخصية-->
+
               <!--عربة الشراء-->
               <div class="col-xs-12">
                 <h3 class="custom-heading">طلبك</h3>
