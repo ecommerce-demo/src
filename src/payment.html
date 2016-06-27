@@ -163,6 +163,22 @@
                     الدفع عند الاستلام
                   </label>
                 </div>
+
+                <!--بيانات بطاقة الائتمان-->
+                <div class="col-xs-12">
+                  <div class="form-group col-sm-6">
+                    <input class="form-control custom-form-control input-lg custom-input-lg" type="text" name="credit_card_number" placeholder="رقم البطاقة" required>
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <input name="credit_card_expiration_month" class="form-control custom-form-control input-lg custom-input-lg" placeholder="شهر الانتهاء" min="1" max="12" type="number" required>
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <input class="form-control custom-form-control input-lg custom-input-lg" type="number" min="2016" max="2030" placeholder="سنة الانتهاء" name="credit_card_expiration_year" required>
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <input class="form-control custom-form-control input-lg custom-input-lg" type="number" name="credit_card_cvv" placeholder="CVV" required>
+                  </div>
+                </div><!--نهاية بيانات بطاقة الائتمان-->
               </div><!--نهاية بيانات الدفع-->
 
               <!--عربة الشراء-->
