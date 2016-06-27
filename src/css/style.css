@@ -564,7 +564,7 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   padding-top: 15px;
 }
 
-.borders-between > .row + .row {
+.borders-between > * + * {
   border-top: 1px solid #EBEBEB;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -662,6 +662,22 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
  }
 
 /* نهاية صفحة المُنتج */
+
+/* صفحة البحث المتقدم */
+#form-advanced-search {
+  border: 1px solid #EBEBEB;
+}
+
+#form-advanced-search .custom-panel {
+  border: none;
+  margin: 0 -20px;
+}
+
+#form-advanced-search > * + * {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* نهاية صفحة البحث المتقدم */
 
 /* صفحة الشراء */
 #form-checkout button[type="submit"] {
