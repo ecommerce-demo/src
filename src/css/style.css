@@ -388,6 +388,11 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   padding: 5px;
 }
 
+.custom-panel .panel-heading {
+  background-color: transparent;
+  border-bottom: 1px solid #EBEBEB;
+}
+
 .custom-panel .product-image {
   width: 100%;
   margin-bottom: 8px;
