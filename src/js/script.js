@@ -98,6 +98,12 @@ $(document).ready(function() {
     // اجلب مدن هذا البلد من المصفوفة
     var cities = citiesByCountry[country];
 
+    // فرّغ قائمة المدن
+    $('#form-checkout select[name="city"]').empty();
+    $('#form-checkout select[name="city"]').append(
+      '<option disabled selected value="">اختر المدينة</option>'
+    );
+
     // أضف المدن إلى قائمة المدن
     cities.forEach(function(city) {
       var $newOption = $('<option></option>');
