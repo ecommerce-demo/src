@@ -69,4 +69,35 @@ $(document).ready(function() {
     // حدث السعر الإجمالي لكل المُنتجات
     calculateTotalPrice();
   });
+
+  var citiesByCountry = {
+    sa: [
+      'الرياض',
+      'جدة'
+    ],
+    eg: [
+      'القاهرة',
+      'الإسكندرية'
+    ],
+    jo: [
+      'عمان',
+      'الزرقاء'
+    ],
+    sy: [
+      'دمشق',
+      'حلب',
+      'حماه'
+    ]
+  };
+
+  // عندما يتغير البلد
+  $('#form-checkout select[name="country"]').on('input', function() {
+    // اجلب رمز البلد
+    var country = $(this).val();
+
+    // اجلب مدن هذا البلد من المصفوفة
+    var cities = citiesByCountry[country];
+
+    // أضف المدن إلى قائمة المدن
+  });
 })
