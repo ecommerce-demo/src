@@ -99,5 +99,12 @@ $(document).ready(function() {
     var cities = citiesByCountry[country];
 
     // أضف المدن إلى قائمة المدن
+    cities.forEach(function(city) {
+      var $newOption = $('<option></option>');
+      $newOption.text(city);
+      $newOption.val(city);
+
+      $('#form-checkout select[name="city"]').append($newOption);
+    });
   });
 })
