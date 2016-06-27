@@ -701,6 +701,11 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   padding-top: 0;
   padding-bottom: 0;
 }
+
+#form-advanced-search button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 /* نهاية صفحة البحث المتقدم */
 
 /* صفحة الشراء */
