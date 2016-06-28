@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var connect = require('gulp-connect');
 var flipper = require('gulp-css-flipper');
 var merge = require('merge-stream');
+var del = require('del');
 
 gulp.task('connect', function() {
   connect.server({
@@ -9,6 +10,10 @@ gulp.task('connect', function() {
     livereload: true,
     port: 8080
   })
+});
+
+gulp.task('clean', function() {
+  return del('build');
 });
 
 gulp.task('watch', function() {
