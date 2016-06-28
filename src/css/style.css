@@ -634,9 +634,12 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
 }
 
 .heading-with-border-bottom {
-  display: inline-block;
   border-bottom: 2px solid #EBEBEB;
   padding-bottom: 15px;
+}
+
+.heading-inline {
+  display: inline-block;
   min-width: 250px;
 }
 
@@ -749,6 +752,10 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
 #search-pagination {
   width: 100%;
   text-align: center;
+}
+
+#search-results h3 {
+  margin-top: 0;
 }
 /* نهاية صفحة البحث المتقدم */
 
