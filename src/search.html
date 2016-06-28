@@ -224,6 +224,8 @@
                     <span id="price-max">800</span>$
                     <br>
                     <div id="price-range"></div>
+                    <input type="hidden" name="price_max" value="250">
+                    <input type="hidden" name="price_min" value="800">
                   </div>
                 </div>
               </div><!--نهاية التصفية حسب السعر-->
@@ -324,8 +326,14 @@
           values: [250, 800],
           slide: function(event, ui) {
             // تغيرت قيمة المجال
+            
+            // غير نصّ السعر
             $('#price-min').text(ui.values[0]);
             $('#price-max').text(ui.values[1]);
+            
+            // غير قيم الحقول المخفية
+            $('input[name="price_min"]').val(ui.values[0]);
+            $('input[name="price_max"]').val(ui.values[1]);
           }
         });
       });
