@@ -97,6 +97,11 @@
       </div><!--نهاية الشريط العلوي-->
 
       <div class="row">
+        <!--الخريطة-->
+        <div class="col-xs-12" id="map">
+
+        </div><!--نهاية الخريطة-->
+
         <div class="container">
           <!--عناصر التّنقّل الفرعيّة-->
           <ol class="breadcrumb custom-breadcrumb">
@@ -186,5 +191,20 @@
     <script src="js/jquery-2.2.4.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      // إحداثيات القاهرة
+      var address = {
+        lat: 30.0444,
+        lng: 31.2357
+      };
+
+      $(document).ready(function() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: address,
+          zoom: 16
+        });
+      });
+    </script>
   </body>
 </html>
