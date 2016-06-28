@@ -773,6 +773,10 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   margin-bottom: 25px;
 }
 
+#contact-options {
+  margin-bottom: 25px;
+}
+
 #contact-info {
   margin-bottom: 25px;
 }

@@ -109,7 +109,7 @@
             <li class="active">تواصل معنا</li>
           </ol><!--نهاية عناصر التّنقّل الفرعيّة-->
 
-          <div class="row">
+          <div id="contact-options" class="row">
             <div class="col-xs-12 col-md-3 col-md-offset-1">
               <!--معلومات التواصل-->
               <h4 class="custom-heading heading-with-border-bottom">
@@ -147,6 +147,34 @@
               </form>
               <!--نهاية قسم الاشتراك بالنّشرة البريدية-->
             </div>
+
+            <!--قسم اترك رسالة-->
+            <div class="col-xs-12 col-md-7">
+              <h4 class="custom-heading">اترك رسالة</h4>
+              <form class="form">
+                <div class="form-group col-sm-6">
+                  <input class="form-control input-lg custom-input-lg custom-form-control" name="name" type="text" placeholder="الاسم" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <input class="form-control input-lg custom-input-lg custom-form-control" name="email" type="email" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group col-sm-12">
+                  <textarea placeholder="نص الرسالة" class="form-control input-lg custom-input-lg  custom-form-control" name="message" cols="30" rows="3" required></textarea>
+                </div>
+                <div class="form-group col-sm-12">
+                  <div class="pull-right">
+                    <button type="submit" class="btn btn-lg btn-primary custom-btn custom-btn-primary2 custom-btn-with-icon">
+                      <span class="pull-left">
+                        إرسال الرسالة
+                      </span>
+                      <span class="pull-right">
+                        <span class="fa fa-paper-plane-o"></span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div><!--نهاية قسم اترك رسالة-->
           </div>
         </div>
       </div>
