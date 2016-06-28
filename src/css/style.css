@@ -534,10 +534,21 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   padding-top: 15px;
 }
 
+.borders-between > .row + .row {
+  border-top: 1px solid #EBEBEB;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 /*صفحة المنتج*/
 #carousel-product-images .item img {
   border: 1px solid #EBEBEB;
   width: 100%;
+}
+
+#carousel-product-images .carousel-indicators {
+  position: relative;
+  top: -35px;
 }
 
 #form-product-selection h2 {
@@ -556,6 +567,7 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   text-align: center;
   line-height: 23px;
   color: #C2C2C2;
+  margin: 3px;
 }
 
 .product-option label {
