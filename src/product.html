@@ -105,150 +105,167 @@
             <li class="active">قميص تك فت بيز</li>
           </ol><!--نهاية عناصر التّنقّل الفرعيّة-->
 
-          <div class="row">
-            <!--صور المنتج-->
-            <div class="col-md-5 col-md-offset-1">
-              <div class="carousel slide" id="carousel-product-images" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="images/product_1.jpg" alt="صورة أماميّة للقميص">
+          <div class="borders-between">
+            <div class="row">
+              <!--صور المنتج-->
+              <div class="col-md-5 col-md-offset-1">
+                <div class="carousel slide" id="carousel-product-images" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="images/product_1.jpg" alt="صورة أماميّة للقميص">
+                    </div>
+                    <div class="item">
+                      <img src="images/product_2.jpg" alt="صورة خلفيّة للقميص">
+                    </div>
                   </div>
-                  <div class="item">
-                    <img src="images/product_2.jpg" alt="صورة خلفيّة للقميص">
-                  </div>
-                </div>
-                <div class="carousel-indicators custom-carousel-indicators-primary">
-                    <img data-target="#carousel-product-images" data-slide-to="0" class="active" src="images/product_1.jpg" alt="صورة أمامية">
-                    <img data-target="#carousel-product-images" data-slide-to="1" src="images/product_2.jpg" alt="صورة خلفية">
-                  </div>
-              </div><!--نهاية صور المنتج-->
+                  <div class="carousel-indicators custom-carousel-indicators-primary">
+                      <img data-target="#carousel-product-images" data-slide-to="0" class="active" src="images/product_1.jpg" alt="صورة أمامية">
+                      <img data-target="#carousel-product-images" data-slide-to="1" src="images/product_2.jpg" alt="صورة خلفية">
+                    </div>
+                </div><!--نهاية صور المنتج-->
+              </div>
+
+              <!--تفاصيل المُنتج-->
+              <div class="col-md-5">
+                <form id="form-product-selection" class="borders-between">
+                  <!--الفئة والعنوان والسعر-->
+                  <div class="row">
+                    <div class="text-muted custom-text-muted">
+                      ملابس رجاليّ
+                    </div>
+                    <div class="clearfix">
+                      <h2 class="pull-left">قميص تك فت بيز</h2>
+                      <div class="pull-right price large">35$</div>
+                    </div>
+                  </div><!--نهاية الفئة والعنوان والسعر-->
+
+                  <!--وصف المنتج-->
+                  <div class="row">
+                    <p>
+                      حقق أقصى أداء أثناء تمارينك الرياضية مع قميص تك فت بيز الرياضي الذي يمنحك الراحة ويدعم عضلاتك.
+                    </p>
+                  </div><!--نهاية وصف المنتج-->
+
+                  <!--الماركة والتقييم-->
+                  <div class="row">
+                    <div class="col-xs-6">
+                      الماركة:
+                      <img src="images/adidas_small.png" alt="Adidas">
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="pull-right rating">
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star active"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                  </div><!--نهاية الماركة والتقييم-->
+
+                  <!--اختيار المقاس واللّون-->
+                  <div class="row">
+                    <div class="col-sm-6">
+                      المقاسات المُتاحة:<br>
+                      <div class="product-option">
+                        <label>
+                          S
+                          <input type="radio" name="size" value="sm">
+                        </label>
+                      </div>
+                      <div class="product-option active">
+                        <label>
+                          M
+                          <input type="radio" name="size" value="m" checked>
+                        </label>
+                      </div>
+                      <div class="product-option">
+                        <label>
+                          L
+                          <input type="radio" name="size" value="l">
+                        </label>
+                      </div>
+                      <div class="product-option">
+                        <label>
+                          XL
+                          <input type="radio" name="size" value="xl">
+                        </label>
+                      </div>
+                    </div><!--نهاية اختيار المقاس-->
+
+                    <!--اختيار اللون-->
+                    <div class="col-sm-6">
+                      الألوان المُتاحة:<br>
+                      <div class="product-option color-option" style="background-color: #FFAF32;">
+                        <label>
+                          <input type="radio" name="color" value="orange">
+                        </label>
+                      </div>
+                      <div class="product-option color-option" style="background-color: #FF322C;">
+                        <label>
+                          <input type="radio" name="color" value="red">
+                        </label>
+                      </div>
+                      <div class="product-option color-option" style="background-color: #AC38B6;">
+                        <label>
+                          <input type="radio" name="color" value="purple">
+                        </label>
+                      </div>
+                      <div class="product-option color-option active" style="background-color: #00C1CE;">
+                        <label>
+                          <input type="radio" name="color" value="blue" checked>
+                        </label>
+                      </div>
+                    </div><!--نهاية اختيار اللون-->
+                  </div><!--نهاية اختيار المقاس واللّون-->
+
+                  <!--اختيار الكمية-->
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <label class="custom-label">
+                        العدد المطلوب:
+                        <select class="form-control custom-form-control select-inline" name="quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div><!--نهاية اختيار الكمية-->
+
+                  <!--إضافة إلى عربة الشراء-->
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="btn btn-lg btn-primary custom-btn custom-btn-primary2 custom-btn-with-icon">
+                        <span class="clearfix">
+                          <span class="pull-left">
+                            إضافة لعربة الشراء
+                          </span>
+                          <span class="pull-right">
+                            <i class="fa fa-cart-plus fa-lg"></i>
+                          </span>
+                        </span>
+                      </button>
+                    </div>
+                  </div><!--نهاية إضافة إلى عربة الشراء-->
+                </form>
+              </div><!--نهاية تفاصيل المُنتج-->
             </div>
 
-            <!--تفاصيل المُنتج-->
-            <div class="col-md-5">
-              <form id="form-product-selection" class="borders-between">
-                <!--الفئة والعنوان والسعر-->
-                <div class="row">
-                  <div class="text-muted custom-text-muted">
-                    ملابس رجاليّ
-                  </div>
-                  <div class="clearfix">
-                    <h2 class="pull-left">قميص تك فت بيز</h2>
-                    <div class="pull-right price large">35$</div>
-                  </div>
-                </div><!--نهاية الفئة والعنوان والسعر-->
-
-                <!--وصف المنتج-->
-                <div class="row">
-                  <p>
-                    حقق أقصى أداء أثناء تمارينك الرياضية مع قميص تك فت بيز الرياضي الذي يمنحك الراحة ويدعم عضلاتك.
-                  </p>
-                </div><!--نهاية وصف المنتج-->
-
-                <!--الماركة والتقييم-->
-                <div class="row">
-                  <div class="col-xs-6">
-                    الماركة:
-                    <img src="images/adidas_small.png" alt="Adidas">
-                  </div>
-                  <div class="col-xs-6">
-                    <div class="pull-right rating">
-                      <i class="fa fa-star active"></i>
-                      <i class="fa fa-star active"></i>
-                      <i class="fa fa-star active"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                </div><!--نهاية الماركة والتقييم-->
-
-                <!--اختيار المقاس واللّون-->
-                <div class="row">
-                  <div class="col-sm-6">
-                    المقاسات المُتاحة:<br>
-                    <div class="product-option">
-                      <label>
-                        S
-                        <input type="radio" name="size" value="sm">
-                      </label>
-                    </div>
-                    <div class="product-option active">
-                      <label>
-                        M
-                        <input type="radio" name="size" value="m" checked>
-                      </label>
-                    </div>
-                    <div class="product-option">
-                      <label>
-                        L
-                        <input type="radio" name="size" value="l">
-                      </label>
-                    </div>
-                    <div class="product-option">
-                      <label>
-                        XL
-                        <input type="radio" name="size" value="xl">
-                      </label>
-                    </div>
-                  </div><!--نهاية اختيار المقاس-->
-
-                  <!--اختيار اللون-->
-                  <div class="col-sm-6">
-                    الألوان المُتاحة:<br>
-                    <div class="product-option color-option" style="background-color: #FFAF32;">
-                      <label>
-                        <input type="radio" name="color" value="orange">
-                      </label>
-                    </div>
-                    <div class="product-option color-option" style="background-color: #FF322C;">
-                      <label>
-                        <input type="radio" name="color" value="red">
-                      </label>
-                    </div>
-                    <div class="product-option color-option" style="background-color: #AC38B6;">
-                      <label>
-                        <input type="radio" name="color" value="purple">
-                      </label>
-                    </div>
-                    <div class="product-option color-option active" style="background-color: #00C1CE;">
-                      <label>
-                        <input type="radio" name="color" value="blue" checked>
-                      </label>
-                    </div>
-                  </div><!--نهاية اختيار اللون-->
-                </div><!--نهاية اختيار المقاس واللّون-->
-
-                <!--اختيار الكمية-->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <label class="custom-label">
-                      العدد المطلوب:
-                      <select class="form-control custom-form-control select-inline" name="quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                      </select>
-                    </label>
-                  </div>
-                </div><!--نهاية اختيار الكمية-->
-
-                <!--إضافة إلى عربة الشراء-->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <button type="submit" class="btn btn-lg btn-primary custom-btn custom-btn-primary2 custom-btn-with-icon">
-                      <span class="clearfix">
-                        <span class="pull-left">
-                          إضافة لعربة الشراء
-                        </span>
-                        <span class="pull-right">
-                          <i class="fa fa-cart-plus fa-lg"></i>
-                        </span>
-                      </span>
-                    </button>
-                  </div>
-                </div><!--نهاية إضافة إلى عربة الشراء-->
-              </form>
-            </div><!--نهاية تفاصيل المُنتج-->
+            <!--الوصف المفصل للمنتج-->
+            <div class="row">
+              <div class="col-xs-12">
+                <h3 class="custom-heading heading-with-border-bottom">وصف المنتج</h3>
+                <p>
+                حقق أقصى أداء أثناء تمارينك الرياضية مع قميص تك فت بيز الرياضي الذي يمنحك الراحة ويدعم عضلاتك.
+                </p>
+                <ul>
+                  <li>درزات ناعمة لتخفيف الاحتكاك والتشققات</li>
+                  <li>مصنع من 88% بوليستر</li>
+                  <li>مستورد</li>
+                </ul>
+              </div>
+            </div><!--نهاية الوصف المفصل للمنتج-->
           </div>
         </div>
       </div>
