@@ -772,6 +772,13 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   height: 250px;
   margin-bottom: 25px;
 }
+
+#contact-info i {
+  color: #F8AD47;
+  margin: 10px;
+  width: 25px;
+  text-align: center;
+}
 /*نهاية صفحة تواصل معنا*/
 
 /* الشاشات الصغيرة جدًا فقط */
