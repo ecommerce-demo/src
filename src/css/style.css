@@ -767,6 +767,13 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
 }
 /* نهاية صفحة الشراء */
 
+/* صفحة تواصل معنا */
+#map {
+  height: 250px;
+  margin-bottom: 25px;
+}
+/*نهاية صفحة تواصل معنا*/
+
 /* الشاشات الصغيرة جدًا فقط */
 @media (max-width: 767px) {
   #carousel-featured, #carousel-featured .product-details {
