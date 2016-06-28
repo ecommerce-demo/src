@@ -204,6 +204,13 @@
           center: address,
           zoom: 16
         });
+
+        // أنشئ مؤشّرًا في مركز الخريطة
+        var marker = new google.maps.Marker({
+          map: map,
+          position: address,
+          icon: 'images/map_marker_icon.png'
+        });
       });
     </script>
   </body>
