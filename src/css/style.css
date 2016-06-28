@@ -547,6 +547,18 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   min-width: 250px;
 }
 
+.custom-media {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.custom-media .media-object {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #EBEBEB;
+}
+
 /*صفحة المنتج*/
 #carousel-product-images .item img {
   border: 1px solid #EBEBEB;
