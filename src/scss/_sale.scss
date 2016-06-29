@@ -1,0 +1,42 @@
+@import '_variables';
+
+.sale {
+  background-color: $brand-secondary;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: absolute;
+  left: 25px;
+  top: 16px;
+  direction: ltr;
+  z-index: 1;
+
+  &::before {
+    content: '-';
+  }
+
+  &.large {
+    height: 60px;
+    width: 60px;
+    padding: 35px;
+    font-size: 130%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-25deg);
+    flex-direction: column;
+    line-height: 90%;
+    left: -15px;
+    top: -15px;
+
+    &::after {
+      content: 'خصم';
+      font-size: 75%;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+}
