@@ -1,5 +1,7 @@
 @import './old-style.css';
 
+$brand-primary: #F8AD47;
+
 .custom-form-control, .custom-btn {
   color: #868686;
   border: 1px solid #EBEBEB;
@@ -27,7 +29,7 @@
 
 .custom-btn-primary {
   background-color: transparent;
-  color: #F8AD47;
+  color: $brand-primary;
   border-color: #F8AD47;
 }
 
