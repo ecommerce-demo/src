@@ -4,6 +4,7 @@ $brand-primary: #F8AD47;
 $brand-danger: #FF3956;
 
 $btn-primary-color-dark: darken($brand-primary, 25%);
+$btn-danger-color-dark: darken($brand-danger, 25%);
 
 .custom-form-control, .custom-btn {
   color: #868686;
@@ -57,8 +58,8 @@ $btn-primary-color-dark: darken($brand-primary, 25%);
 .custom-btn-danger:active,
 .custom-btn-danger:active:hover,
 .custom-btn-danger:active:focus {
-  color: #C2101E;
-  border-color: #C2101E;
+  color: $btn-danger-color-dark;
+  border-color: $btn-danger-color-dark;
   background-color: transparent;
 }
 
