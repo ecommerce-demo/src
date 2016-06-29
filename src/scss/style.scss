@@ -27,7 +27,7 @@
   box-shadow: 0 0 2px 0 $btn-form-control-focus-dark;
 }
 
-@mixin button-style($color, $color-dark) {
+@mixin button-style($color) {
   color: $color;
   border-color: $color;
   background-color: transparent;
@@ -37,18 +37,18 @@
   &:active,
   &:active:hover,
   &:active:focus {
-    color: $color-dark;
-    border-color: $color-dark;
+    color: darken($color, 25%);
+    border-color: darken($color, 25%);
     background-color: transparent;
   }
 }
 
 .custom-btn-primary {
-  @include button-style($brand-primary, $btn-primary-color-dark);
+  @include button-style($brand-primary);
 }
 
 .custom-btn-danger {
-  @include button-style($brand-danger, $btn-danger-color-dark);
+  @include button-style($brand-danger);
 }
 
 .custom-btn-primary2 {
