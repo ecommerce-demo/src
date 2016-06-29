@@ -20,7 +20,7 @@ $(document).ready(function() {
   });
 
   // عندما تتغير كمية المنتج
-  $('[data-product-quantity]').on('input', function() {
+  $('[data-product-quantity]').change(function() {
     // اجلب الكمية الجديدة
     var newQuantity = $(this).val();
 
