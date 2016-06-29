@@ -3,6 +3,8 @@
 $brand-primary: #F8AD47;
 $brand-danger: #FF3956;
 
+$btn-primary-color-dark: darken($brand-primary, 25%);
+
 .custom-form-control, .custom-btn {
   color: #868686;
   border: 1px solid #EBEBEB;
@@ -39,8 +41,8 @@ $brand-danger: #FF3956;
 .custom-btn-primary:active,
 .custom-btn-primary:active:hover,
 .custom-btn-primary:active:focus {
-  color: #AB7731;
-  border-color: #AB7731;
+  color: $btn-primary-color-dark;
+  border-color: $btn-primary-color-dark;
   background-color: transparent;
 }
 
@@ -72,6 +74,6 @@ $brand-danger: #FF3956;
 .custom-btn-primary2:active:hover,
 .custom-btn-primary2:active:focus,
 .custom-btn-primary2:hover:disabled {
-  border-color: #AB7731;
-  background-color: #AB7731;
+  border-color: $btn-primary-color-dark;
+  background-color: $btn-primary-color-dark;
 }
