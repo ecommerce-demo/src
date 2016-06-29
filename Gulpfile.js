@@ -41,7 +41,7 @@ gulp.task('css', function() {
 
 gulp.task('scss', function() {
   return gulp.src('src/scss/*.scss')
-  .pipe(sassToCSS())
+  .pipe(sassToCSS({ outputStyle: 'compressed' }))
   .pipe(gulp.dest('build/css'))
 })
 
