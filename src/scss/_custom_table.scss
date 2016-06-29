@@ -10,14 +10,14 @@
     vertical-align: middle;
     border-bottom: 1px solid #EBEBEB;
     border-top: 1px solid #EBEBEB;
-  }
 
-  th:not(:first-child), td:not(:first-child) {
-    text-align: center;
-  }
+    &:first-child {
+      width: 50%;
+    }
 
-  th:first-child, td:first-child {
-    width: 50%;
+    &:not(:first-child) {
+      text-align: center;
+    }
   }
 
   tfoot {
