@@ -1,6 +1,7 @@
 @import './old-style.css';
 
 $brand-primary: #F8AD47;
+$brand-danger: #FF3956;
 
 .custom-form-control, .custom-btn {
   color: #868686;
@@ -44,8 +45,8 @@ $brand-primary: #F8AD47;
 }
 
 .custom-btn-danger {
-  color: #FF3956;
-  border-color: #FF3956;
+  color: $brand-danger;
+  border-color: $brand-danger;
   background-color: transparent;
 }
 
@@ -61,8 +62,8 @@ $brand-primary: #F8AD47;
 
 .custom-btn-primary2 {
   color: white;
-  background-color: #F8AD47;
-  border-color: #F8AD47;
+  background-color: $brand-primary;
+  border-color: $brand-primary;
 }
 
 .custom-btn-primary2:hover,
