@@ -6,6 +6,8 @@ $brand-danger: #FF3956;
 $btn-primary-color-dark: darken($brand-primary, 25%);
 $btn-danger-color-dark: darken($brand-danger, 25%);
 
+$btn-form-control-focus-dark: $btn-primary-color-dark;
+
 .custom-form-control, .custom-btn {
   color: #868686;
   border: 1px solid #EBEBEB;
@@ -27,8 +29,8 @@ $btn-danger-color-dark: darken($brand-danger, 25%);
 }
 
 .custom-form-control:focus {
-  border-color: #AB7731;
-  box-shadow: 0 0 2px 0 #AB7731;
+  border-color: $btn-form-control-focus-dark;
+  box-shadow: 0 0 2px 0 $btn-form-control-focus-dark;
 }
 
 .custom-btn-primary {
