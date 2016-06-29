@@ -20,8 +20,10 @@
     width: 50%;
   }
 
-  tfoot td {
-    border-bottom: none;
-    font-size: 150%;
+  tfoot {
+    td {
+      border-bottom: none;
+      font-size: 150%;
+    }
   }
 }
