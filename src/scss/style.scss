@@ -27,36 +27,28 @@
   box-shadow: 0 0 2px 0 $btn-form-control-focus-dark;
 }
 
-.custom-btn-primary {
+@mixin button-style($color, $color-dark) {
+  color: $color;
+  border-color: $color;
   background-color: transparent;
-  color: $brand-primary;
-  border-color: $brand-primary;
 
   &:hover,
   &:focus,
   &:active,
   &:active:hover,
   &:active:focus {
-    color: $btn-primary-color-dark;
-    border-color: $btn-primary-color-dark;
+    color: $color-dark;
+    border-color: $color-dark;
     background-color: transparent;
   }
 }
 
-.custom-btn-danger {
-  color: $brand-danger;
-  border-color: $brand-danger;
-  background-color: transparent;
+.custom-btn-primary {
+  @include button-style($brand-primary, $btn-primary-color-dark);
+}
 
-  &:hover,
-  &:focus,
-  &:active,
-  &:active:hover,
-  &:active:focus {
-    color: $btn-danger-color-dark;
-    border-color: $btn-danger-color-dark;
-    background-color: transparent;
-  }
+.custom-btn-danger {
+  @include button-style($brand-danger, $btn-danger-color-dark);
 }
 
 .custom-btn-primary2 {
