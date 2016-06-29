@@ -1,0 +1,32 @@
+@import './_variables';
+
+.ui-slider {
+  background: #EBEBEB;
+  border: none;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  // المقبضان
+  .ui-slider-handle {
+    background-color: $brand-primary;
+    border: none;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+  }
+
+  // المجال
+  .ui-slider-range {
+    background: $brand-primary;
+  }
+}
+
+// الشاشات الصّغيرة والصّغيرة جدًّا
+@media (max-width: 991px) {
+  .ui-slider .ui-slider-handle {
+    height: 20px;
+    width: 20px;
+    top: -10px;
+  }
+}
