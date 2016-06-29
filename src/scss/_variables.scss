@@ -1,0 +1,7 @@
+$brand-primary: #F8AD47;
+$brand-danger: #FF3956;
+
+$btn-primary-color-dark: darken($brand-primary, 25%);
+$btn-danger-color-dark: darken($brand-danger, 25%);
+
+$btn-form-control-focus-dark: $btn-primary-color-dark;
