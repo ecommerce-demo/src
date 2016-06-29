@@ -582,32 +582,6 @@ body > .container-fluid > .row:not(:first-child):not(:last-child) {
   border: 1px solid #EBEBEB;
 }
 
-.custom-table th {
-  color: #C2C2C2;
-  font-weight: normal;
-}
-
-.custom-table th, .custom-table td {
-  padding: 15px;
-  font-size: 120%;
-  vertical-align: middle;
-  border-bottom: 1px solid #EBEBEB;
-  border-top: 1px solid #EBEBEB;
-}
-
-.custom-table th:not(:first-child), .custom-table td:not(:first-child) {
-  text-align: center;
-}
-
-.custom-table th:first-child, .custom-table td:first-child {
-  width: 50%;
-}
-
-.custom-table tfoot td {
-  border-bottom: none;
-  font-size: 150%;
-}
-
 /*صفحة المنتج*/
 #carousel-product-images .item img {
   border: 1px solid #EBEBEB;
